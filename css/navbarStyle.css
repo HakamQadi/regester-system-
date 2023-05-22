@@ -1,3 +1,5 @@
+
+
 :root {
     /* light */
 
@@ -9,6 +11,7 @@
     --navBar_container_bg_color_dark: #27374D;
     --navBar_container_txt_color_dark: white;
 }
+
 
 .navbar_container {
     background-color: var(--navBar_container_bg_color_light);
