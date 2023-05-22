@@ -14,7 +14,9 @@
 .card {
     background-color: var(--card_bg_color_light);
     background-image: url("../assets/img/edu-bottom.png");
+
     /* background-size: ; */
+
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: 80%;
@@ -186,6 +188,10 @@ input {
     transform: translate3d(-50%, -50%, 0) scale3d( 15, 15, 15);
 }
 
+#last_input {
+    margin-bottom: 5rem;
+}
+
 /* media */
 
 @media(max-width: 425px) {
@@ -203,6 +209,14 @@ input {
         vertical-align: middle;
 
         color: #7881A1;
+    }
+
+    #submit_btn {
+        font-size: 0.7rem;
+    }
+
+    #last_input {
+        margin-bottom: 3rem;
     }
 }
 
@@ -222,6 +236,10 @@ input {
 
         color: #7881A1;
     }
+
+    #submit_btn {
+        font-size: 0.5rem;
+    }
 }
 
 @media(max-width: 320px) {
@@ -239,5 +257,9 @@ input {
         vertical-align: middle;
 
         color: #7881A1;
+    }
+
+    #last_input {
+        margin-bottom: 2rem;
     }
 }
