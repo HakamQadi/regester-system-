@@ -99,6 +99,8 @@ Text-level semantics
 
 a {
     background-color: transparent;
+    text-decoration: none;
+    color: #000;
 }
 
 /*
@@ -359,3 +361,6 @@ template {
 [hidden] {
     display: none;
 }
+
+
+

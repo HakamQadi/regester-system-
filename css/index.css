@@ -1,0 +1,18 @@
+#landing__page{
+    background-color: #f7f7f8;
+    background-image: url('../assets/img/bgOfImageHome.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.left__landing__page h3, .left__landing__page div{
+    color: #302941;
+    width: 80%;
+    margin-top: 4rem;
+} 
+
+
+
+.reight__landing__page img{
+    width: 100%;
+}
