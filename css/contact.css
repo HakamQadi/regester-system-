@@ -10,7 +10,6 @@
 
     background-color: var(--container_bg_color_light);
 }
-
 .card {
     background-color: var(--card_bg_color_light);
     background-image: url("../assets/img/edu-bottom.png");
