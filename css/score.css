@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(54, 35, 96);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 100vh;
+}
+
+#score img{
+    width: 25rem;
+}
+
+#score h1{
+    color: #fff;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+#score span{
+    color: rgb(132, 166, 211);
+    background-color: #fff;
+    font-size: 50px;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    display: inline-block;
+    font-weight: 900;
+}
+
+#questions{
+    color: #fff;
+    font-size: 30px;
+}
