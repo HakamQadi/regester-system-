@@ -5,14 +5,222 @@
     background-position: top right;
 }
 
-.left__landing__page h3, .left__landing__page div{
+.left__landing__page h3 {
     color: #302941;
-    width: 80%;
-    margin-top: 4rem;
+    width: 70%;
+    margin: 4rem auto;
 } 
 
+.left__landing__page div{
+    margin:0 auto;
+    width: 60%;
+    gap: 10px;
+}
 
+.left__landing__page div button{
+   padding: 7px;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+}
+.left__landing__page div :first-child{
+ background-color: #524a65;
+ color: #f7f7f8;
+ }
+ 
+ .left__landing__page div :nth-child(2){
+    background-color:#9b99f1 ;
+    color: #524a65;
+    }
+    
 
-.reight__landing__page img{
+.right__landing__page img{
     width: 100%;
 }
+
+
+.medail__main{
+    background: #dee7f3;
+    display: flex;
+    place-content: center ;
+    position: sticky;
+    background: url("../assets/img/progressBg.svg") no-repeat left #dee7f3;
+    background-size: contain;
+}
+
+
+.container__progress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: 400px;
+    width: 100%;
+    padding: 50px;
+  }
+  .container__progress .steps {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  .steps .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    color: #999;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 50%;
+    background: #fff;
+    border: 4px solid #e0e0e0;
+    transition: all 200ms ease;
+    transition-delay: 0s;
+  }
+  .steps .circle.active {
+    transition-delay: 100ms;
+    border-color: #4070f4;
+    color: #4070f4;
+  }
+  .steps .progress-bar {
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #e0e0e0;
+    z-index: -1;
+  }
+  .progress-bar .indicator {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #4070f4;
+    transition: all 300ms ease;
+  }
+  .container__progress .buttons {
+    display: flex;
+    gap: 20px;
+  }
+  .buttons button {
+    padding: 8px 25px;
+    background: #4070f4;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    transition: all 200ms linear;
+  }
+  .buttons button:active {
+    transform: scale(0.97);
+  }
+  .buttons button:disabled {
+    background: #87a5f8;
+    cursor: not-allowed;
+  }
+
+  .medail__main__quiz{
+    background-color: #eef0fe;
+    background: url('../assets/img/medailSection.svg') #dee7f3;
+    background-repeat: no-repeat;
+    background-size: 500px;
+    
+  }
+
+  .start__quiz__container{
+ 
+   display: flex;
+   flex-direction: column;
+   place-items: center;
+  }
+  .Quiz__btn__container{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+   
+  }
+  .group__a{
+    display: flex;  
+    align-items: center;                            
+    place-content: center;
+    padding: 7px;
+    background-color: #eef0fe;
+    border-color: #000;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.group__a:hover {
+    background-color: #d795c0;
+    border: 3px solid #a2abeb;
+}
+
+
+
+.group__b{
+    display: flex;  
+    align-items: center;                            
+    place-content: center;
+    background-color: #d795c0 ;
+    padding: 7px;
+    border-color: #000;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.group__b:hover {
+    background-color: #a2abeb;
+    border: 3px solid #d795c0;
+
+}
+
+
+.threD__anmition{
+      
+}
+
+
+.style__h1{
+    color: #d795c0;
+}
+
+.start__quiz__container h1{
+    margin: 7% 0;
+}
+
+ @media ((max-width: 770px)) {
+   
+    .left__landing__page {
+        width: 100%;
+        background-color: #000;
+    }
+    .left__landing__page div {
+        font-size: small;
+      
+        
+    }
+    .right__landing__page {
+          display: none;
+    }
+    .left__landing__page div button{
+       margin: 0 5%;
+      
+     }
+  
+    .left__medail__main__quiz img{
+        width: 200px;
+        margin-left: 10%;
+      }
+  }
