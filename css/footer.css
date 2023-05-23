@@ -14,8 +14,12 @@ footer {
     background-size: 13rem;
     background-repeat: no-repeat;
     background-position: top left;
-    background-color: #dee7f3;
 }
+
+.copy__right{
+  text-align: center;
+}
+
 
 @media  (max-width: 600px){
       footer div p a {

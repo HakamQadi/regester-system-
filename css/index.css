@@ -40,13 +40,16 @@
     width: 100%;
 }
 
+main{
+  background: rgb(255,255,255);
+  background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(180,202,230,1) 100%);
+}
 
 .medail__main{
-    background: #dee7f3;
     display: flex;
     place-content: center ;
     position: sticky;
-    background: url("../assets/img/progressBg.svg") no-repeat left #dee7f3;
+    background: url("../assets/img/progressBg.svg") no-repeat left;
     background-size: contain;
 }
 
@@ -82,10 +85,11 @@
     transition: all 200ms ease;
     transition-delay: 0s;
   }
+ 
   .steps .circle.active {
     transition-delay: 100ms;
-    border-color: #4070f4;
-    color: #4070f4;
+    border-color: #524a65;
+    color: #524a65;
   }
   .steps .progress-bar {
     position: absolute;
@@ -98,7 +102,7 @@
     position: absolute;
     height: 100%;
     width: 0%;
-    background: #4070f4;
+    background: #524a65;
     transition: all 300ms ease;
   }
   .container__progress .buttons {
@@ -107,7 +111,7 @@
   }
   .buttons button {
     padding: 8px 25px;
-    background: #4070f4;
+    background: #524a65;
     border: none;
     border-radius: 8px;
     color: #fff;
@@ -126,8 +130,8 @@
   }
 
   .medail__main__quiz{
-    background-color: #eef0fe;
-    background: url('../assets/img/medailSection.svg') #dee7f3;
+    
+    background: url('../assets/img/medailSection.svg') ;
     background-repeat: no-repeat;
     background-size: 500px;
   }
