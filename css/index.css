@@ -19,6 +19,42 @@
     gap: 10px;
 }
 
+.left__landing__page h3 span {
+  color: #d795c0;
+}
+.left__landing__page h3{
+	        -webkit-animation: focus-in-expand 91.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-expand 91.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        margin: 0 auto;
+}
+@-webkit-keyframes focus-in-expand {
+  0% {
+            letter-spacing: -0.5em;
+            filter: blur(0);
+            opacity: 0;
+            -webkit-filter: blur(0);
+}
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand {
+  0% {
+            letter-spacing: -0.5em;
+            filter: blur(0);
+            opacity: 0;
+            -webkit-filter: blur(0);
+}
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+
 .left__landing__page div button{
    padding: 7px;
    border-radius: 5px;
@@ -63,7 +99,7 @@ main{
     gap: 40px;
     max-width: 400px;
     width: 100%;
-    padding: 50px;
+    padding: 50px 50px 0 50px;
   }
   .container__progress .steps {
     display: flex;
@@ -155,6 +191,7 @@ main{
     display: flex;  
     align-items: center;                            
     place-content: center;
+    gap: 0 5px;
     padding: 7px;
     background-color: #eef0fe;
     border: 5px solid #eef0fe;
@@ -165,9 +202,17 @@ main{
     -o-border-radius: 10px;
 }
 
+
+
 .group__a:hover {
     background-color: #d795c0;
     border: 5px solid #eef0fe;
+    color: #eef0fe;
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
 }
 
 
@@ -176,6 +221,8 @@ main{
     display: flex;  
     align-items: center;                            
     place-content: center;
+    color: #fff;
+    gap: 0 5px;
     background-color: #d795c0 ;
     padding: 7px;
     border: 5px solid #d795c0;
@@ -188,6 +235,9 @@ main{
 .group__b:hover {
     background-color: #eef0fe;
     border: 5px solid #d795c0;
+    color: #000;
+    transition: 0.8s;
+
 
 }
 
