@@ -130,7 +130,6 @@
     background: url('../assets/img/medailSection.svg') #dee7f3;
     background-repeat: no-repeat;
     background-size: 500px;
-    
   }
 
   .start__quiz__container{
@@ -194,6 +193,10 @@
     margin: 7% 0;
 }
 
+.threD__anmition{
+  padding-bottom: 100px;
+}
+
  @media ((max-width: 770px)) {
    
     .left__landing__page {
@@ -212,7 +215,9 @@
        margin: 0 5%;
       
      }
-  
+    .wrapper {
+      margin: 0;
+    }
     .left__medail__main__quiz img{
         width: 200px;
         margin-left: 10%;
