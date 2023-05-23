@@ -1,0 +1,33 @@
+:root {
+    --container_bg_color_light: #84A6D3;
+
+    --card_bg_color_light:#524A65
+}
+
+.personal-section {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 41rem;
+
+    background-color: var(--container_bg_color_light);
+
+    place-items: center;
+}
+
+.profile_img {
+    width: 15rem;
+    margin-top: 3rem;
+
+    border-radius: 50%;
+}
+.profile{
+    position: relative;
+}
+
+.add_img{
+    position: relative;
+    top: 115px;
+    left: -5rem;
+}
