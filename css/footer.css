@@ -7,13 +7,14 @@ a {
     justify-content: space-between;
     align-items: center;
     padding-top: 4%;
+    margin: 0 64.4px;
 }
 footer {
     background-image: url('../assets/img/footerBG.svg');
     background-size: 13rem;
     background-repeat: no-repeat;
     background-position: top left;
-    background-color: #f9faff;
+    background-color: #dee7f3;
 }
 
 @media  (max-width: 600px){
@@ -21,9 +22,6 @@ footer {
         font-size: .8rem;
       }
 }
-  
-
-
 .wrapper {
   display: inline-flex;
   list-style: none;
