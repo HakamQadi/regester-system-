@@ -25,6 +25,9 @@ footer {
       footer div p a {
         font-size: .8rem;
       }
+      .contacts{
+        margin: 0 20px;
+      }
 }
 .wrapper {
   display: inline-flex;

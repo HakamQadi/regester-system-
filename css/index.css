@@ -4,7 +4,9 @@
     background-repeat: no-repeat;
     background-position: top right;
 }
-
+.fixe__bg{
+  --bs-gutter-x: 0;
+}
 .left__landing__page h3 {
     color: #302941;
     width: 70%;
@@ -205,7 +207,7 @@ main{
    
     .left__landing__page {
         width: 100%;
-        /* background-color: #000; */
+   
     }
     .left__landing__page div {
         font-size: small;
