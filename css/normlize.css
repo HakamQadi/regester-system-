@@ -18,6 +18,8 @@ Document
 }
 */
 
+
+
 p {
     margin: 0;
     padding: 0;
@@ -40,7 +42,7 @@ Sections
 
 /* fonts.googleapis.com/css2?family=Poppins:wght@100;500;700;900&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;500;700;900&family=Poppins:wght@100;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;500;700;900&display=swap');
 
 body {
     /* font-family: 'Poppins', sans-serif; */
@@ -90,7 +92,8 @@ hr {
 */
 
 pre {
-    font-family: monospace, monospace; /* 1 */
+    /* font-family: monospace, monospace; */
+
     font-size: 1em; /* 2 */
 }
 
@@ -135,7 +138,8 @@ strong {
 code,
 kbd,
 samp {
-    font-family: monospace, monospace; /* 1 */
+    /* font-family: monospace, monospace; */
+
     font-size: 1em; /* 2 */
 }
 
@@ -194,7 +198,8 @@ input,
 optgroup,
 select,
 textarea {
-    font-family: inherit; /* 1 */
+    /* font-family: inherit; */
+
     font-size: 100%; /* 1 */
     line-height: 1.15; /* 1 */
 
