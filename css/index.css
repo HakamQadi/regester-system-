@@ -152,7 +152,7 @@
     place-content: center;
     padding: 7px;
     background-color: #eef0fe;
-    border-color: #000;
+    border: 5px solid #eef0fe;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -162,7 +162,7 @@
 
 .group__a:hover {
     background-color: #d795c0;
-    border: 3px solid #a2abeb;
+    border: 5px solid #eef0fe;
 }
 
 
@@ -173,7 +173,7 @@
     place-content: center;
     background-color: #d795c0 ;
     padding: 7px;
-    border-color: #000;
+    border: 5px solid #d795c0;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -181,8 +181,8 @@
     -o-border-radius: 10px;
 }
 .group__b:hover {
-    background-color: #a2abeb;
-    border: 3px solid #d795c0;
+    background-color: #eef0fe;
+    border: 5px solid #d795c0;
 
 }
 

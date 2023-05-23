@@ -6,6 +6,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 4%;
 }
 footer {
     background-image: url('../assets/img/footerBG.svg');
@@ -13,8 +14,15 @@ footer {
     background-repeat: no-repeat;
     background-position: top left;
     background-color: #f9faff;
-    height: 300vh;
 }
+
+@media  (max-width: 600px){
+      footer div p a {
+        font-size: .8rem;
+      }
+}
+  
+
 
 .wrapper {
   display: inline-flex;
