@@ -18,18 +18,25 @@
     <link rel="stylesheet" href="../css/score.css" />
     <link rel="stylesheet" href="../css/normlize.css" />
     <link rel="stylesheet" href="../css/navbarStyle.css" />
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
     <title>score</title>
   </head>
   <body>
     <!---- header ---->
 
-    <header class="p-3 mb-3 border-bottom navbar_container">
+    <header class="p-3 border-bottom navbar_container">
       <div class="d-flex flex-wrap align-items-center justify-content-between">
         <div class="d-flex flex-wrap gap-3">
           <a href="../index.html">
-            <img style="width: 10rem" src="../assets/ics/logo-no-background.png" alt="" />
+            <img
+              style="width: 6rem"
+              src="../assets/ics/logo-no-background.png"
+              alt=""
+            />
           </a>
         </div>
         <div class="d-flex flex-wrap gap-3 align-items-center">
@@ -93,118 +100,74 @@
 
     <!---- end header ---->
 
-    <div class="container" id="container-score"></div>
-    <div class="row m-0">
-
-      <div class="col-6" id="score">
-        <h1 style="margin-top: 4rem;">Tech SCORE</h1>
-        <div><span>10</span></div>
-        <img src="../assets/img/scorebg.svg" alt="" />
-
-      </div>
-      <div class="col-6" id="score">
-        <h1 style="margin-top: 4rem;">English SCORE</h1>
-        <div><span>10</span></div>
-
-      </div>
-
-      <div class="score-text">
+    <main>
+      <div class="container" id="container-score">
+          <div class="row d-flex">
+            <div id="score">
+              <h1 style="margin-top: 4rem">Tech SCORE</h1>
+              <div><span>10</span></div>
+              <!-- <img class="" src="../assets/img/scorebg.svg" alt="" /> -->
+            </div>
+            <div id="score">
+              <h1 style="margin-top: 4rem">English SCORE</h1>
+              <div><span>30</span></div>
+            </div>
+          </div>
+          <div class="score-text">
             <h2>Your Application Has Been Submitted</h2>
-            <div><p>First Name :</p></div>
-            <div><p>Last Name :</p></div>
-            <div><p>Educational level :</p></div>
-            <div><p>Majoring in :</p></div>
-            <div><p>Graduate GPA :</p></div>
-            <div><p>Address :</p></div>
-            <div><p>Phone :</p></div>
-
+            <div>
+              <div><p>First Name :</p></div>
+              <div><p>Last Name :</p></div>
+              <div><p>Educational level :</p></div>
+              <div><p>Majoring in :</p></div>
+              <div><p>Graduate GPA :</p></div>
+              <div><p>Address :</p></div>
+              <div><p>Phone :</p></div>
+            </div>
+          </div>
       </div>
-       </div>
+    </main>
+
+    <!------ footer ------->
+    <footer>
+      <div class="contacts">
+        <div>
+          <p><a href="#">Example@email.com</a></p>
+          <p><a href="3">+962-77*******</a></p>
+        </div>
+        <div>
+          <p><a href="#">Address:Amman-Jordan</a></p>
+          <p><a href="#">Street:Istiqlal St</a></p>
+          <p><a href="#">Building: 48</a></p>
+        </div>
       </div>
-
-
-
-
-
-      <!-- <div class="col-9" id="questions">
-        <div style="margin-top: 4rem;">
-            <p>1- Which planet is known as the "Red Planet"?</p>
-            <p>your answer :</p>
-            <p>correct answer :</p>
-        
+      <hr style="margin: 0 64.4px" />
+      <div>
+        <ul class="wrapper">
+          <li class="icon facebook">
+            <span class="tooltip">Facebook</span>
+            <span><i class="fab fa-facebook-f"></i></span>
+          </li>
+          <li class="icon instagram">
+            <span class="tooltip">Instagram</span>
+            <span><i class="fab fa-instagram"></i></span>
+          </li>
+          <li class="icon twitter">
+            <span class="tooltip">Twitter</span>
+            <span><i class="fab fa-twitter"></i></span>
+          </li>
+          <li class="icon github">
+            <span class="tooltip">Github</span>
+            <span><i class="fab fa-github"></i></span>
+          </li>
+        </ul>
+        <div class="copy__right">
+          &copy;<span class="style__h1">A</span>pply
+          <span class="style__h1">F</span>low - 2023
         </div>
-        <hr />
-        <div><p>2- What is the chemical symbol for the element gold"?</p>
-            <p>your answer :</p>
-            <p>correct answer :</p>
-        </div>
-        <hr />
-        <div><p>3- Who wrote the novel "To Kill a Mockingbird"?</p>
-            <p>your answer :</p>
-            <p>correct answer :</p>
-        </div>
-        <hr />
-        <div><p>4- Who painted the famous artwork "The Starry Night"?</p>
-            <p>your answer :</p>
-            <p>correct answer :</p>
-        </div>
-        <hr />
-        <div><p>5- What is the largest organ in the human body?</p>
-            <p>your answer :</p>
-            <p>correct answer :</p>
-        </div>
-        <hr />
-        <div><p>6- Which country is home to the Taj Mahal?</p>
-            <p>your answer :</p>
-            <p>correct answer :</p>
-        </div>
-        <hr />
-        <div><p>7- What is the largest organ in the human body?</p>
-            <p>your answer :</p>
-            <p>correct answer :</p>
-        </div>
-        </div> -->
-    </div>
+      </div>
+    </footer>
 
-<!--------- footer --------->
-
-<footer>
-    <div class="contacts container">
-       <div>
-        <p><a href="#">Example@email.com</a></p> 
-        <p><a href="3">+962-77*******</a></p> 
-       </div>
-       <div>
-      <p><a href="#">Address:Amman-Jordan</a></p> 
-      <p><a href="#">Street:Istiqlal St</a></p> 
-      <p><a href="#">Building: 48</a></p> 
-       </div>    
-    </div> 
-    <hr style="margin: 0 64.4px;">
-    <div>
-       <ul class="wrapper ">
-           <li class="icon facebook">
-             <span class="tooltip">Facebook</span>
-             <span><i class="fab fa-facebook-f"></i></span>
-           </li>
-           <li class="icon instagram">
-             <span class="tooltip">Instagram</span>
-             <span><i class="fab fa-instagram"></i></span>
-           </li>
-           <li class="icon twitter">
-               <span class="tooltip">Twitter</span>
-               <span><i class="fab fa-twitter"></i></span>
-             </li>
-           <li class="icon github">
-             <span class="tooltip">Github</span>
-             <span><i class="fab fa-github"></i></span>
-           </li>
-         </ul>
-    </div>
-    
-   </footer>
-
-<!---------end footer --------->
-
+    <!---------end footer --------->
   </body>
 </html>

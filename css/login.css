@@ -1,106 +1,98 @@
-:root{
-    --body-color: rgb(249, 250, 255);
-    --box-background-color: rgb(150, 179, 217);
+:root {
+  --body-color: rgb(249, 250, 255);
+  --box-background-color: rgb(150, 179, 217);
 }
 
-body{
-    background-color: var(--body-color) 
-    
+body {
+  background-color: var(--body-color);
 }
-.style{
-    background: url(../assets/img/bg.svg);
-    background-size: 80%;
-    background-attachment: local;
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-color: #f9faff;
-    height: 100vh;
-   
-   
+.style {
+  background: url(../assets/img/bg.svg);
+  background-size: 80%;
+  background-attachment: local;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-color: #f9faff;
+  height: 100vh;
 }
-.style .box{
-    background: rgb(150, 179, 217);
-    display: grid;
-    justify-content: center;
-    border-radius: 18px;
-    padding: 25px;
-    height: 542px;
-    width: 47%;
-    margin-left: 2%;
-    margin-top: 2%;
+.style .box {
+  background: rgb(150, 179, 217);
+  display: grid;
+  justify-content: center;
+  border-radius: 18px;
+  padding: 25px;
+  height: 542px;
+  width: 47%;
+  margin-left: 2%;
+  margin-top: 2%;
 }
 
-.style input{
-    width: 250px;
-    box-shadow: 4px 4px 9px #888888;
+.style input {
+  width: 250px;
+  box-shadow: 4px 4px 9px #888888;
 }
 
-.login-btn{
-    background: rgb(82, 74, 101);
-    width: 255px;
-    height: 43px;
-    box-shadow: 4px 4px 9px #888888;
-
+.login-btn {
+  background: rgb(82, 74, 101);
+  width: 255px;
+  height: 43px;
+  box-shadow: 4px 4px 9px #888888;
 }
 
-.style h1{
-    color: #f9faff;
-    font-size: 45px;
-    margin: 97px auto 58px auto;
+.style h1 {
+  color: #f9faff;
+  font-size: 45px;
+  margin: 97px auto 58px auto;
 }
 
-a{
-text-decoration: none;
-color: #000000;
-font-size: 18px;
-font-weight: bold;
-text-align: center;
-margin-top: 10px;
+a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
 }
 
 /*----------------media query--------------*/
 
 @media screen and (max-width: 320px) {
-    .style input{
-        width: 108px;
-        margin-left: 1.7rem;
-        font-size: 0.1rem;
-    
-    }
-    .style input::placeholder{
-     
-    font-size:0.1rem;
-    }
-
-    .login-btn{
-        width: 108px;
-        margin-left: 1.7rem;
-        font-size: 0.1rem;
-        padding: 0;
-        height: 20px;
-    }
-   .style form p {
-    font-size: 0.1rem ;
-    margin-left: 2rem;
-}
-form {
-    width: 10rem;
-}
-
-span a {
+  .style input {
+    width: 108px;
+    margin-left: 1.7rem;
     font-size: 0.1rem;
-}
-.style h1{
+  }
+  .style input::placeholder {
+    font-size: 0.1rem;
+  }
+
+  .login-btn {
+    width: 108px;
+    margin-left: 1.7rem;
+    font-size: 0.1rem;
+    padding: 0;
+    height: 20px;
+  }
+  .style form p {
+    font-size: 0.1rem;
+    margin-left: 2rem;
+  }
+  form {
+    width: 10rem;
+  }
+
+  span a {
+    font-size: 0.1rem;
+  }
+  .style h1 {
     margin: 10px auto 6px auto;
     font-size: 1.5rem;
-}
-.style small{
+  }
+  .style small {
     font-size: 0.1rem;
     margin-left: 2rem;
-}
-.style .box{
+  }
+  .style .box {
     height: 254px;
+  }
 }
-}
-
-
