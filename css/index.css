@@ -186,12 +186,6 @@
 
 }
 
-
-.threD__anmition{
-      
-}
-
-
 .style__h1{
     color: #d795c0;
 }
@@ -204,7 +198,7 @@
    
     .left__landing__page {
         width: 100%;
-        background-color: #000;
+        /* background-color: #000; */
     }
     .left__landing__page div {
         font-size: small;
@@ -222,5 +216,16 @@
     .left__medail__main__quiz img{
         width: 200px;
         margin-left: 10%;
+      }
+      .Quiz__btn__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .group__a{
+        width: 150px;
+      }
+      .group__b{
+        width: 150px;
       }
   }
