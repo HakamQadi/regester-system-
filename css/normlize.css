@@ -38,10 +38,14 @@ Sections
 
 /* font */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;700;900&display=swap');
+/* fonts.googleapis.com/css2?family=Poppins:wght@100;500;700;900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;500;700;900&family=Poppins:wght@100;500;700;900&display=swap');
 
 body {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+
+    font-family: 'Jost', sans-serif;
 
     margin: 0;
 }
@@ -98,9 +102,10 @@ Text-level semantics
 /*    * Remove the gray background on active links in IE 10. */
 
 a {
-    background-color: transparent;
     text-decoration: none;
+
     color: #000;
+    background-color: transparent;
 }
 
 /*
@@ -361,6 +366,3 @@ template {
 [hidden] {
     display: none;
 }
-
-
-
