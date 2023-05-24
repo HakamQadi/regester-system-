@@ -9,11 +9,11 @@ body {
 .style {
   background: url(../assets/img/bg.svg);
   background-size: 80%;
-  background-attachment: local;
   background-repeat: no-repeat;
   background-position: top right;
   background-color: #f9faff;
-  height: 100vh;
+  /* height: 50rem; */
+  padding-bottom: 30rem;
 }
 .style .box {
   background: rgb(150, 179, 217);
