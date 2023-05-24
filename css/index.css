@@ -83,6 +83,7 @@ main{
   background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(180,202,230,1) 100%);
 }
 
+
 .medail__main{
     display: flex;
     place-content: center ;
@@ -168,11 +169,11 @@ main{
   }
 
   .medail__main__quiz{
-    
     background: url('../assets/img/medailSection.svg') ;
     background-repeat: no-repeat;
-    background-size: 500px;
-  }
+    background-size: 494px;
+}
+
 
   .start__quiz__container{
  
@@ -251,10 +252,11 @@ main{
 
 .threD__anmition{
   padding-bottom: 100px;
+ 
 }
 
  @media ((max-width: 770px)) {
-   
+     
     .left__landing__page {
         width: 100%;
    
@@ -289,4 +291,13 @@ main{
       .group__b{
         width: 150px;
       }
+       .blur__bg{
+        backdrop-filter: blur(5px);
+       }
+      .threD__anmition{
+        backdrop-filter: blur(5px);
+          padding-bottom: 0px ;
+      }
+      
+     
   }
