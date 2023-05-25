@@ -122,39 +122,51 @@ else if (page == "login_page") {
         let userNameValid = false;
         let passValid = false;
 
-        let get_data = getData()
-        // console.log(get_data[0].email);
-        for (let i = 0; i < get_data.length; i++) {
-            if (get_data[i].username == username.value && get_data[i].pass == password.value) {
-                console.log("موجود")
-
-                // sessionStorage.setItem("user_firstName", get_data[i].firstName)
-                // sessionStorage.setItem("user_lastName", get_data[i].lastName)
-                // sessionStorage.setItem("user_date", get_data[i].date)
-
-                // window.open("https://www.google.com","_blank");
-                // window.location.href = "profile.html"
-
-                break;
-            }
-
-            else if (get_data[i].username !== username.value || get_data[i].pass !== password.value) {
-                // check another user
-                continue;
-            }
-            else {
-                console.log("مش موجود")
-                break;
-            }
-
-
-            // dataNew[i] =
-            // {
-            //     username: text,
-            //     email: `${text}@email`,
-            //     pass: `${text}_password`
-            // }
+        if (username.value != "") {
+            userNameValid = true;
         }
+        if (password.value != "") {
+            passValid = true;
+        }
+
+        if (
+            userNameValid === false ||
+            passValid === false
+        ) {
+            e.preventDefault();
+        }
+
+        if (
+            userNameValid === true ||
+            passValid === true
+        ) {
+            let get_data = getData()
+            for (let i = 0; i < get_data.length; i++) {
+                if (get_data[i].username == username.value && get_data[i].pass == password.value) {
+                    console.log("موجود")
+
+                    // sessionStorage.setItem("user_firstName", get_data[i].firstName)
+                    // sessionStorage.setItem("user_lastName", get_data[i].lastName)
+                    // sessionStorage.setItem("user_date", get_data[i].date)
+
+                    // window.open("https://www.google.com","_blank");
+                    window.location.href = "../index.html"
+
+                    break;
+                }
+
+                else if (get_data[i].username !== username.value || get_data[i].pass !== password.value) {
+                    // check another user
+                    continue;
+                }
+                else {
+                    console.log("مش موجود")
+                    break;
+                }
+            }
+        }
+
+
 
 
     })
