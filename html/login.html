@@ -25,7 +25,7 @@
     />
     <title>Login</title>
   </head>
-  <body>
+  <body id="login_page">
     <!---- header ---->
 
     <header class="p-3 mb-3 border-bottom navbar_container">
@@ -33,7 +33,7 @@
         <div class="d-flex flex-wrap gap-3">
           <a href="../index.html">
             <img
-              style="width: 10rem"
+              style="width: 6rem"
               src="../assets/ics/logo-no-background.png"
               alt=""
             />
@@ -100,41 +100,43 @@
 
     <!---- end header ---->
 
-    <div class="container style">
-      <div class="row">
-        <div class="box" class="col d-flex justify-content-between">
-          <h1>LOGIN</h1>
-          <form>
-            <div class="mb-4">
-              <input
-                type="email"
-                class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-                placeholder="username"
-              />
-            </div>
-            <div class="mb-4">
-              <input
-                type="password"
-                class="form-control"
-                id="exampleInputPassword1"
-                placeholder="Password"
-              />
-              <small id="emailHelp" class="form-text text-muted"
-                >forget password?</small
-              >
-            </div>
-            <button type="submit" class="btn btn-primary login-btn">
-              Log In
-            </button>
-            <p>
-              new member ? <span><a href="#">Sign Up</a></span>
-            </p>
-          </form>
+    <main class="style">
+      <div class="container">
+        <div class="row">
+          <div class="box" class="col d-flex justify-content-between">
+            <h1>LOGIN</h1>
+            <form>
+              <div class="mb-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="username"
+                  aria-describedby="emailHelp"
+                  placeholder="Username"
+                />
+              </div>
+              <div class="mb-4">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="Password"
+                />
+                <small id="forget_password" class="form-text text-muted"
+                  >forget password?</small
+                >
+              </div>
+              <button type="submit" class="btn btn-primary login-btn">
+                Log In
+              </button>
+              <p>
+                new member ? <span><a href="SignUp.html">Sign Up</a></span>
+              </p>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
 
     <!--------- footer --------->
 
@@ -178,5 +180,6 @@
     </footer>
 
     <!---------end footer --------->
+    <script src="../js/main.js"></script>
   </body>
 </html>

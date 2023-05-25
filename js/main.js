@@ -7,7 +7,8 @@ let confirm_password = document.getElementById("confirm_password")
 let form_signUp = document.getElementById("form_signUp")
 
 
-
+if (page == "signup_page") {
+    
 let emailPattern = /^[^\s@]+@[^\s@]+.[^\s@]+$/;
 let passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
 
@@ -65,3 +66,8 @@ form_signUp.addEventListener("submit", (e) => {
     }
 
 })
+}
+else if (page == "login_page"){
+}
+else{
+}

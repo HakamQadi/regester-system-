@@ -25,7 +25,7 @@
     />
     <title>SignUp</title>
   </head>
-  <body>
+  <body id="signup_page">
     <!---- header ---->
 
     <header class="p-3 mb-3 border-bottom navbar_container">
@@ -99,101 +99,102 @@
     </header>
 
     <!---- end header ---->
-<main class="style">
-   <div class="container ">
-      <div class="row">
-        <div class="box" class="col d-flex justify-content-between">
-          <h1>SignUp</h1>
-          <form id="form_signUp" action="login.html">
-            <div class="mb-3">
-              <input
-              
-                type="text"
-                class="form-control"
-                placeholder="username"
-                id="username"
-              />
-            </div>
-            <div class="mb-3">
-              <input
-              
-                type="email"
-                class="form-control"
-                placeholder="Email"
-                id="email"
-              />
-            </div>
-            <div class="mb-3">
-              <input
-              
-                type="password"
-                class="form-control"
-                aria-describedby="emailHelp"
-                placeholder="Password"
-                id="password"
-              />
-            </div>
-            <div class="mb-3">
-              <input
-              
-                type="password"
-                class="form-control"
-                placeholder="Confirm Password"
-                id="confirm_password"
-              />
-            </div>
-            <button type="submit" class="btn btn-primary SignUp-btn">
-              SignUp
-            </button>
-            <p>
-              Already Have Account? <span><a href="login.html">Login</a></span>
-            </p>
-          </form>
+    <main class="style">
+      <div class="container">
+        <div class="row">
+          <div class="box" class="col d-flex justify-content-between">
+            <h1>SignUp</h1>
+            <form id="form_signUp" action="login.html">
+              <div class="mb-3">
+                <input
+                required
+                  type="text"
+                  class="form-control"
+                  placeholder="username"
+                  id="username"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                required
+                  type="email"
+                  class="form-control"
+                  placeholder="Email"
+                  id="email"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                required
+                  type="password"
+                  class="form-control"
+                  aria-describedby="emailHelp"
+                  placeholder="Password"
+                  id="password"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                required
+                  type="password"
+                  class="form-control"
+                  placeholder="Confirm Password"
+                  id="confirm_password"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary SignUp-btn">
+                SignUp
+              </button>
+              <p>
+                Already Have Account?
+                <span><a href="login.html">Login</a></span>
+              </p>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-</main>
-   
+    </main>
 
     <!--------- footer --------->
 
     <footer>
-      <div class="contacts ">
-         <div>
-          <p><a href="#">Example@email.com</a></p> 
-          <p><a href="3">+962-77*******</a></p> 
-         </div>
-         <div>
-        <p><a href="#">Address:Amman-Jordan</a></p> 
-        <p><a href="#">Street:Istiqlal St</a></p> 
-        <p><a href="#">Building: 48</a></p> 
-         </div>    
-      </div> 
-      <hr style="margin: 0 64.4px;">
-      <div>
-         <ul class="wrapper ">
-             <li class="icon facebook">
-               <span class="tooltip">Facebook</span>
-               <span><i class="fab fa-facebook-f"></i></span>
-             </li>
-             <li class="icon instagram">
-               <span class="tooltip">Instagram</span>
-               <span><i class="fab fa-instagram"></i></span>
-             </li>
-             <li class="icon twitter">
-                 <span class="tooltip">Twitter</span>
-                 <span><i class="fab fa-twitter"></i></span>
-               </li>
-             <li class="icon github">
-               <span class="tooltip">Github</span>
-               <span><i class="fab fa-github"></i></span>
-             </li>
-           </ul> 
-           <div class="copy__right">&copy;<span class="style__h1">A</span>pply <span class="style__h1">F</span>low - 2023</div>
+      <div class="contacts">
+        <div>
+          <p><a href="#">Example@email.com</a></p>
+          <p><a href="3">+962-77*******</a></p>
+        </div>
+        <div>
+          <p><a href="#">Address:Amman-Jordan</a></p>
+          <p><a href="#">Street:Istiqlal St</a></p>
+          <p><a href="#">Building: 48</a></p>
+        </div>
       </div>
-     
-      
-     </footer>
+      <hr style="margin: 0 64.4px" />
+      <div>
+        <ul class="wrapper">
+          <li class="icon facebook">
+            <span class="tooltip">Facebook</span>
+            <span><i class="fab fa-facebook-f"></i></span>
+          </li>
+          <li class="icon instagram">
+            <span class="tooltip">Instagram</span>
+            <span><i class="fab fa-instagram"></i></span>
+          </li>
+          <li class="icon twitter">
+            <span class="tooltip">Twitter</span>
+            <span><i class="fab fa-twitter"></i></span>
+          </li>
+          <li class="icon github">
+            <span class="tooltip">Github</span>
+            <span><i class="fab fa-github"></i></span>
+          </li>
+        </ul>
+        <div class="copy__right">
+          &copy;<span class="style__h1">A</span>pply
+          <span class="style__h1">F</span>low - 2023
+        </div>
+      </div>
+    </footer>
     <!---------end footer --------->
     <script src="../js/main.js"></script>
   </body>
