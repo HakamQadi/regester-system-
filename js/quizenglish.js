@@ -232,7 +232,7 @@ const countdown = setInterval(function() {
 if (timeLeft <= 0) {
   clearInterval(countdown);
 
-  window.location.href = 'index.html';
+  window.location.href = '../index.html';
   
 } else {
   const minutes = Math.floor(timeLeft / 60);

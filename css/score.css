@@ -1,30 +1,29 @@
 main {
   background-color: rgb(54, 35, 96);
   background-image: url("../assets/img/scorebg.svg");
-  background-size: 23%;
-  background-repeat: no-repeat;
-  background-position: left;
+  background-size: 14%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
 }
-
 #score img {
   width: 25rem;
 }
 
 #score h1 {
   color: #fff;
-  font-size: 45px;
-  font-weight: 900;
+  font-size: 2rem;
+  font-family: ui-monospace;
 }
 
 #score span {
-  color: rgb(132, 166, 211);
+  color: rgb(132 166 211 / 91%);
   background-color: #fff;
-  font-size: 44px;
-  height: 75px;
-  width: 75px;
+  font-size: 3rem;
   border-radius: 50%;
   display: inline-block;
-  font-weight: 900;
+  padding: 1.5%;
+  text-align: center;
+  font-family: ui-monospace;
 }
 
 #questions {
@@ -34,8 +33,8 @@ main {
 
 #container-score {
   background-repeat: no-repeat;
-  background-position: left;
-  height: 622px;
+  background-position: left bottom;
+  height: 850px;
 }
 
 #score {
@@ -44,14 +43,28 @@ main {
 }
 
 .score-text {
-  margin-top: 3rem;
   color: white;
-  font-size: 25px;
+  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
+  margin-left: 13%;
+  margin-top: 6%;
+  font-family: ui-monospace;
+  font-style: inherit;
 }
+.heder_submited{
+    border: #fff 1px solid;
+    padding: 2%;
+    border-radius:10px  ;
+    -webkit-border-radius:10px  ;
+    -moz-border-radius:10px  ;
+    -ms-border-radius:10px  ;
+    -o-border-radius:10px  ;
+    margin-bottom: 3%;
+    color: #fff;
 
+}
 @media screen and (max-width: 320px) {
   #score h1{
     font-size: 15px;
