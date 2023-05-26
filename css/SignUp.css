@@ -92,6 +92,11 @@ a {
     margin-left: 2rem;
   }
   .style .box {
-    height: 340px;
+    margin-left: 72px;
+    height: 300px;
+    padding: 7px;
+    width: 179px;}
+  .style{
+    background-image: none;
   }
 }
