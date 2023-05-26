@@ -18,88 +18,51 @@
     <title>Document</title>
 </head>
 <body>
-   
-      
+
     <main class="d-flex justify-content-center align-items-center pt-3 pb-5">
         <div class="container">
            <div class="row pb-4 d-flex align-items-center">
                 <div class="col justify-content-start">
                     <p class="h5 test-header_tech">Technical Quiz</p>
                 </div>
-                <div class="col  justify-content-end d-flex align-items-center">
+                <div class="col  justify-content-end d-flex align-items-center" id="timer_tech">
                     <span class="circle_Tech p-3">00:00</span>
                 </div>
             </div>
          <div class="row row_question_option">
  
-             <div class="col-6 col-question">
-                 <div class="row row_hederquestion">
-                     <div class="col-11 d-flex justify-content-center align-items-center">
-                         <p class="h5 question_cont border-bottom ml-4" >Question 1/10</p>
-                     </div>
-                     <div class="col-1 arrow p-0 me-auto d-flex justify-content-end">
-                         <img src="../assets/img/Arrow.svg" alt="">
-                     </div>
-                 </div>
-                 <div class="row justify-content-center mt-3">
-                     <img src="../assets/img/photo.svg" alt="" class="image_question">
-                 </div>
-                 <div class="row mt-1">
-                     <p class="h5 question_ d-flex justify-content-center align-items-center pt-3 " >apa penyebutan ayah dalam bahasa using ?</p>
-                 </div>
+             <div class="col-6 col-question" id="tech-question">
+                
              </div>
  
              <div class="col-6 col-answer">
                  <div class="row mt-5 mb-3">
                      <p class="h5 options">Select one </p>
                  </div>
-                 <div class="row row_Check-option">
-                     <div class="form-check mt-4 mb-2=1 form-check1 ">
-                         <input class="form-check-input input_check" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"  >
-                         <label class="form-check-label" for="exampleRadios1">
-                          <span>A.</span> Default radio
-                         </label>
-                       </div>
-                       <div class="form-check mt-4 mb-1 ">
-                         <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                         <label class="form-check-label" for="exampleRadios2">
-                         <span>B.</span> Second default radio
-                         </label>
-                       </div>
-                       <div class="form-check mt-4 mb-1">
-                         <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                         <label class="form-check-label" for="exampleRadios2">
-                          <span>C.</span> Second default radio
-                         </label>
-                       </div>
-                       <div class="form-check mt-4 mb-1 form-check1">
-                         <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
-                         <label class="form-check-label" for="exampleRadios3">
-                           <span>D.</span> Disabled radio
-                         </label>
-                       </div>
+                 <div class="row row_Check-option"  id="tech_answer">
+               
                  </div>
                  <div class="row mt-5 mb-5">
                      <div class="col-11 d-flex justify-content-end">
-                         <button class="btn-next"><img src="../assets/img/next.svg" alt=""></button>
+                         <button class="btn-next" id="submit__tech"><img src="../assets/img/next.svg" alt=""></button>
                      </div>
                  </div>
  
-                 <!-- <div class="row"></div>
-                 <div class="row"></div>
-                 <div class="row"></div> -->
+                 
              </div>
          </div>
         </div>
      </main>
-
+     <script src="../js/quizTechnical.js"></script>
 </body>
+
 <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"
   ></script>
-  <!-- // -->
+ 
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
-  <script src="../js/dark-light mode.js"></script>
-</html>
+  <!-- <script src="../js/dark-light mode.js"></script> -->
+  
+  </html>
