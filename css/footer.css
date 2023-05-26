@@ -1,37 +1,36 @@
 a {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }
-.contacts{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 64.4px;
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 64.4px;
 }
 footer {
-    background-image: url('../assets/img/footerBG.svg');
-    background-size: 13rem;
-    background-repeat: no-repeat;
-    background-position: top left;
+  background-image: url("../assets/img/footerBG.svg");
+  background-size: 13rem;
+  background-repeat: no-repeat;
+  background-position: top left;
 }
 
-.copy__right{
+.copy__right {
   text-align: center;
 }
 
-
-@media  (max-width: 600px){
-      footer div p a {
-        font-size: .8rem;
-      }
-      .contacts{
-        margin: 0 20px;
-      }
+@media (max-width: 600px) {
+  footer div p a {
+    font-size: 0.8rem;
+  }
+  .contacts {
+    margin: 0 20px;
+  }
 }
 .wrapper {
   display: inline-flex;
   list-style: none;
-  margin: 0 64.4px; 
+  margin: 0 64.4px;
   flex-wrap: wrap;
 }
 
@@ -94,21 +93,21 @@ footer {
 .wrapper .facebook:hover,
 .wrapper .facebook:hover .tooltip,
 .wrapper .facebook:hover .tooltip::before {
-  background: #1877F2;
+  background: #1877f2;
   color: #ffffff;
 }
 
 .wrapper .twitter:hover,
 .wrapper .twitter:hover .tooltip,
 .wrapper .twitter:hover .tooltip::before {
-  background: #1DA1F2;
+  background: #1da1f2;
   color: #ffffff;
 }
 
 .wrapper .instagram:hover,
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip::before {
-  background: #E4405F;
+  background: #e4405f;
   color: #ffffff;
 }
 
@@ -122,11 +121,9 @@ footer {
 .wrapper .youtube:hover,
 .wrapper .youtube:hover .tooltip,
 .wrapper .youtube:hover .tooltip::before {
-  background: #CD201F;
+  background: #cd201f;
   color: #ffffff;
 }
-.style__h1{
+.style__h1 {
   color: #d795c0;
 }
-
-

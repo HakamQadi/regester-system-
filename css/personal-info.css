@@ -1,239 +1,243 @@
 :root {
-    --container_bg_color_light: #84A6D3;
+  --container_bg_color_light: #84a6d3;
 
-    --card_bg_color_light:#524A65
+  --card_bg_color_light: #524a65;
 }
 
 body {
-    background-color: var(--container_bg_color_light);
+  background-color: var(--container_bg_color_light);
 }
 
 .personal-section {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    width: 100%;
-    height: 41rem;
+  width: 100%;
+  height: 41rem;
 
-    background-color: var(--container_bg_color_light);
+  background-color: var(--container_bg_color_light);
 
-    place-items: center;
+  place-items: center;
 }
 
 .profile_img {
-    width: 15rem;
-    margin-top: 3rem;
+  width: 15rem;
+  margin-top: 3rem;
 
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .profile {
-    /* position: relative; */
+  /* position: relative; */
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .add_img {
-    position: relative;
-    top: 115px;
-    left: -5rem;
+  position: relative;
+  top: 115px;
+  left: -5rem;
 }
 
 .card {
-    background-color: var(--card_bg_color_light);
-    background-image: url("../assets/img/edu-bottom.png");
+  background-color: var(--card_bg_color_light);
+  background-image: url("../assets/img/edu-bottom.png");
 
-    /* background-size: ; */
+  /* background-size: ; */
 
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 80%;
 }
 
 /* input */
 
 input {
-    border-style: none;
-    outline: none;
-    background: transparent;
+  border-style: none;
+  outline: none;
+  background: transparent;
 }
 
 #icn-input {
-    padding: 0;
+  padding: 0;
 
-    border: none;
-    outline: none;
-    background: none;
+  border: none;
+  outline: none;
+  background: none;
 }
 
 @-webkit-keyframes gradient {
-
-0% {
+  0% {
     background-position: 0 0;
-}
+  }
 
-100% {
+  100% {
     background-position: 100% 0;
-}
-
+  }
 }
 @keyframes gradient {
-
-0% {
+  0% {
     background-position: 0 0;
-}
+  }
 
-100% {
+  100% {
     background-position: 100% 0;
-}
-
+  }
 }
 
 .webflow-style-input {
-    position: relative;
+  position: relative;
 
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-    width: 30%;
-    max-width: 70%;
-    margin: 0 auto 1rem auto;
-    padding: 0px 1rem;
+  width: 30%;
+  max-width: 70%;
+  margin: 0 auto 1rem auto;
+  padding: 0px 1rem;
 
-    border-radius: 2px;
-    background: rgba(57, 63, 84, 0.8);
+  border-radius: 2px;
+  background: rgba(57, 63, 84, 0.8);
 }
 
 .webflow-style-input:after {
-    position: absolute;
-    z-index: 999;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
+  position: absolute;
+  z-index: 999;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 
-    height: 2px;
+  height: 2px;
 
-    content: "";
-    -webkit-animation: gradient 3s linear infinite;
-    animation: gradient 3s linear infinite;
+  content: "";
+  -webkit-animation: gradient 3s linear infinite;
+  animation: gradient 3s linear infinite;
 
-    border-bottom-right-radius: 2px;
-    border-bottom-left-radius: 2px;
-    background: linear-gradient(to right, #B294FF, #57E6E6, #FEFFB8, #57E6E6, #B294FF, #57E6E6);
-    background-position: 0% 0%;
-    background-size: 500% auto;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  background: linear-gradient(
+    to right,
+    #b294ff,
+    #57e6e6,
+    #feffb8,
+    #57e6e6,
+    #b294ff,
+    #57e6e6
+  );
+  background-position: 0% 0%;
+  background-size: 500% auto;
 }
 
 .webflow-style-input input {
-    line-height: 2.4rem;
+  line-height: 2.4rem;
 
-    flex-grow: 1;
+  flex-grow: 1;
 
-    width: 50%;
+  width: 50%;
 
-    vertical-align: middle;
+  vertical-align: middle;
 
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .webflow-style-input input::-webkit-input-placeholder {
-    color: #7881A1;
+  color: #7881a1;
 }
 
 .webflow-style-input button {
-    font-size: 1.5rem;
-    line-height: 2.4rem;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
 
-    /* margin-right: 1rem; */
+  /* margin-right: 1rem; */
 
-    transition: color 0.25s;
-    vertical-align: middle;
+  transition: color 0.25s;
+  vertical-align: middle;
 
-    color: #7881A1;
+  color: #7881a1;
 }
 
 .webflow-style-input button:hover {
-    color: #BFD2FF;
+  color: #bfd2ff;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 /* button */
 
 #submit_btn {
-    font-family: inherit;
-    font-size: inherit;
+  font-family: inherit;
+  font-size: inherit;
 
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 
-    overflow: hidden;
+  overflow: hidden;
 
-    width: 9%;
-    margin: 4rem auto 0 auto;
-    padding: 0.5em 1em;
+  width: 9%;
+  margin: 4rem auto 0 auto;
+  padding: 0.5em 1em;
 
-    transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
 
-    color: white;
-    border: none;
-    outline: none;
-    background-color: hsl(236, 32%, 26%);
+  color: white;
+  border: none;
+  outline: none;
+  background-color: hsl(236, 32%, 26%);
 }
 
 #submit_btn::before {
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
 
-    width: 1em;
-    height: 1em;
+  width: 1em;
+  height: 1em;
 
-    content: '';
-    transition: transform 0.45s ease-in-out;
-    transform: translate3d(-50%, -50%, 0) scale3d( 0, 0, 0);
-    transform-origin: center;
+  content: "";
+  transition: transform 0.45s ease-in-out;
+  transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+  transform-origin: center;
 
-    border-radius: 50%;
-    background-color: #84a6d3;
+  border-radius: 50%;
+  background-color: #84a6d3;
 }
 
 #submit_btn:hover {
-    cursor: pointer;
+  cursor: pointer;
 
-    color: #161616;
+  color: #161616;
 }
 
 #submit_btn:hover::before {
-    transform: translate3d(-50%, -50%, 0) scale3d( 15, 15, 15);
+  transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
 }
 
 #last_input {
-    margin-bottom: 5rem;
+  margin-bottom: 5rem;
 }
-.date_input{
-    color: #7881A1 !important;
+.date_input {
+  color: #7881a1 !important;
 }
 
 /* media */
 
-@media(min-width: 375px) {
-    .profile {
-        position: relative;
-        left: 36px;
-    }
+@media (min-width: 375px) {
+  .profile {
+    position: relative;
+    left: 36px;
+  }
 }
 
-@media(min-width: 320px) {
-    .profile {
-        position: inherit;
-        left: 36px;
-    }
+@media (min-width: 320px) {
+  .profile {
+    position: inherit;
+    left: 36px;
+  }
 }

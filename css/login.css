@@ -9,14 +9,10 @@ body {
 .style {
   background-image: url(../assets/img/bg.svg);
   background-size: 50%;
-
   object-fit: contain;
-  /* size: 10%; */
   background-repeat: no-repeat;
   background-position: top right;
   background-color: #f9faff;
-  /* height: 50vh; */
-  /* padding-bottom: 30rem; */
 }
 .style .box {
   background: rgb(150, 179, 217);
@@ -96,6 +92,11 @@ a {
     margin-left: 2rem;
   }
   .style .box {
-    height: 254px;
+    margin-left: 72px;
+    height: 240px;
+    padding: 7px;
+    width: 179px;}
+  .style{
+    background-image: none;
   }
 }
