@@ -1,24 +1,24 @@
 let page = document.body.id;
 // console.log(page+" page");
 
-if (page == "english_test") {
-    let englishScoreContainer = document.getElementById("english_score")
-    let englishScore = localStorage.getItem("score_english")
+// if (page == "english_test") {
+//     let englishScoreContainer = document.getElementById("english_score")
+//     let englishScore = localStorage.getItem("score_english")
 
-    englishScoreContainer.innerHTML =
-        `<h1 style="margin-top: 4rem">English Score</h1>
-    <div><span>${englishScore}</span></div>`
+//     englishScoreContainer.innerHTML =
+//         `<h1 style="margin-top: 4rem">English Score</h1>
+//     <div><span>${englishScore}</span></div>`
 
-}
+// }
 
-if (page == "tech_test") {
-    let techScoreContainer = document.getElementById("tech_score")
-    let techScore = localStorage.getItem("score_tech")
+// if (page == "tech_test") {
+//     let techScoreContainer = document.getElementById("tech_score")
+//     let techScore = localStorage.getItem("score_tech")
 
-    techScoreContainer.innerHTML =
-        `<h1 style="margin-top: 4rem">Technical Score</h1>
-    <div><span>${techScore}</span></div>`
-}
+//     techScoreContainer.innerHTML =
+//         `<h1 style="margin-top: 4rem">Technical Score</h1>
+//     <div><span>${techScore}</span></div>`
+// }
 
 if (page == "personal_info") {
     // console.log(page);
@@ -30,6 +30,7 @@ if (page == "personal_info") {
         console.log("asd");
         localStorage.setItem("firstName", firstName.value)
         localStorage.setItem("lastName", lastName.value)
+        window.location.href="../html/edu-info.html"
 
     })
 
@@ -43,9 +44,13 @@ if (page=="edu_info") {
     let nextBtn = document.getElementById("next_btn")
     
     nextBtn.addEventListener("click",()=>{
+        console.log("object");
         localStorage.setItem("major",major.value)
         localStorage.setItem("edu_lvl",eduLvl.value)
+        window.location.href="../html/contact.html"
+
     })
+
 }
 
 
@@ -59,12 +64,28 @@ if (page=="contact") {
         // console.log("object");
         localStorage.setItem("address",country.value +","+city.value)
         localStorage.setItem("phone",phone.value)
+        window.location.href="../index.html"
+
     })
 
 }
 
 
 if (page == "score") {
+    let englishScoreContainer = document.getElementById("english_score")
+    let englishScore = localStorage.getItem("score_english")
+
+    englishScoreContainer.innerHTML =
+        `<h1 style="margin-top: 4rem">English Score</h1>
+    <div><span>${englishScore}</span></div>`
+
+    let techScoreContainer = document.getElementById("tech_score")
+    let techScore = localStorage.getItem("score_tech")
+
+    techScoreContainer.innerHTML =
+        `<h1 style="margin-top: 4rem">Technical Score</h1>
+    <div><span>${techScore}</span></div>`
+
     let firstNameContainer=document.getElementById("first_name")
     let firstname=localStorage.getItem("firstName")
     firstNameContainer.innerHTML=
