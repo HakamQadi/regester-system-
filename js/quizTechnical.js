@@ -1,16 +1,16 @@
 const Tech_Test = [
   //0
   {
-    question:"Which of the following is a valid HTML tag for creating a hyperlink?",
-    options: ["img", 
-    "a",
-    " p",
-    "div"],
-    answer: "a" ,
+    question: "Which of the following is a valid HTML tag for creating a hyperlink?",
+    options: ["img",
+      "a",
+      " p",
+      "div"],
+    answer: "a",
   },
   //1
   {
-    question:"Which of the following is a correct syntax for creating a CSS class named 'example-class?' ",
+    question: "Which of the following is a correct syntax for creating a CSS class named 'example-class?' ",
     options: ["img", "a", " p", "div"],
     answer: "a",
   },
@@ -27,7 +27,7 @@ const Tech_Test = [
   },
   //3
   {
-    question:"What is the correct syntax for adding a background color to a div element in CSS?",
+    question: "What is the correct syntax for adding a background color to a div element in CSS?",
     options: [
       "background-color: yellow;",
       "color: yellow;",
@@ -116,7 +116,7 @@ const Tech_Test = [
   },
   //12
   {
-    question: "What does the HTML tag <select> do?",
+    question: "What does the HTML tag '<select>' do?",
     options: [
       "Creates a text input field",
       "Creates a checkbox",
@@ -280,48 +280,55 @@ const Tech_Test = [
 //   options: ["img", "a", " p", "div"],
 //   answers: "a",
 // }
-const tech_ten_Random=[];
-const maxQuestions = 10; 
-let answerPlusQuestion_user_tec=[];
-let correct_answers_tec=0;
+
+
+let submit_btn = document.getElementById("submit_icon");
+// let circles = document.querySelectorAll(".circle");
+
+
+
+const tech_ten_Random = [];
+const maxQuestions = 10;
+let answerPlusQuestion_user_tec = [];
+let correct_answers_tec = 0;
 while (tech_ten_Random.length < maxQuestions) {
 
-const randomQuestion = Math.floor(Math.random() * Tech_Test.length);
-if (!tech_ten_Random.includes(Tech_Test[randomQuestion])) {
+  const randomQuestion = Math.floor(Math.random() * Tech_Test.length);
+  if (!tech_ten_Random.includes(Tech_Test[randomQuestion])) {
     tech_ten_Random.push(Tech_Test[randomQuestion]);
-}
+  }
 }
 
 console.log(tech_ten_Random);
 
 
-  const tech_Q=document.getElementById("tech-question");
-  let tech_A=document.getElementById("tech_answer");
-  let timer_Tech=document.getElementById("timer_tech");
-  let button__submit_technical=document.getElementById("submit__tech");
-  const average = correct_answers_tec / maxQuestions;
-  const accuracyPercentage_tec = (average * 100).toFixed(2);
+const tech_Q = document.getElementById("tech-question");
+let tech_A = document.getElementById("tech_answer");
+let timer_Tech = document.getElementById("timer_tech");
+let button__submit_technical = document.getElementById("submit__tech");
+const average = correct_answers_tec / maxQuestions;
+const accuracyPercentage_tec = (average * 100).toFixed(2);
 
 
-  let timeLeft = localStorage.getItem('timeLeft_tech') || (10 * 60); 
+let timeLeft = localStorage.getItem('timeLeft_tech') || (10 * 60);
 
-  const countdown = setInterval(function() {
-    if (timeLeft <= 0) {
-      clearInterval(countdown);
-      window.location.href = 'score.html';
-    } else {
-      const minutes = Math.floor(timeLeft / 60);
-      const seconds = timeLeft % 60;
-      // console.log(minutes + ' minutes ' + seconds + ' seconds remaining.');
-      timer_Tech.innerHTML=`
+const countdown = setInterval(function () {
+  if (timeLeft <= 0) {
+    clearInterval(countdown);
+    window.location.href = 'score.html';
+  } else {
+    const minutes = Math.floor(timeLeft / 60);
+    const seconds = timeLeft % 60;
+    // console.log(minutes + ' minutes ' + seconds + ' seconds remaining.');
+    timer_Tech.innerHTML = `
       <span class="circle_Tech p-3">${minutes}:${seconds}</span>
   `;
-  localStorage.setItem('timeLeft_tech', timeLeft);
-      timeLeft--;
-    }
-  }, 1000);
+    localStorage.setItem('timeLeft_tech', timeLeft);
+    timeLeft--;
+  }
+}, 1000);
 
-  let index=0;
+let index = 0;
 // localStorage.setItem('timeLeft_tech', timeLeft);
 
 const questionData = {
@@ -333,7 +340,7 @@ const storedQuestionData = JSON.parse(localStorage.getItem('questionData'));
 const storedQuestion = storedQuestionData.question;
 const storedOptions = storedQuestionData.options;
 
-  tech_Q.innerHTML=`
+tech_Q.innerHTML = `
   <div class="row row_hederquestion">
   <div class="col-11 d-flex justify-content-center align-items-center">
       <p class="h5 question_cont border-bottom ml-4" >Question 1/10</p>
@@ -349,7 +356,7 @@ const storedOptions = storedQuestionData.options;
   <p class="h5 question_ d-flex justify-content-center align-items-center p-5 " >${storedQuestion}</p>
 </div>
   `;
-  tech_A.innerHTML=`
+tech_A.innerHTML = `
   <div class="form-check mt-4 mb-2=1 form-check1 ">
       <input class="form-check-input input_check" type="radio" name="option-${index}" id="exampleRadios1" value="${tech_ten_Random[index].options[0]}"  >
       <label class="form-check-label" for="exampleRadios1">
@@ -376,39 +383,39 @@ const storedOptions = storedQuestionData.options;
     </div>
 
   `;
- 
-  const Radios = tech_A.querySelectorAll(`input[name="option-${index}"]`);
+
+const Radios = tech_A.querySelectorAll(`input[name="option-${index}"]`);
 Radios.forEach(radio => {
-radio.addEventListener("click", () => {
+  radio.addEventListener("click", () => {
 
-  let question_display = tech_ten_Random[index-1].question;
-  let correct_answer = tech_ten_Random[index-1].answer;
-  let selected_answer = radio.value;
+    let question_display = tech_ten_Random[index - 1].question;
+    let correct_answer = tech_ten_Random[index - 1].answer;
+    let selected_answer = radio.value;
 
-  let alreadyCorrect = answerPlusQuestion_user_tec.some(obj => obj.question === question_display && obj.selected === correct_answer);
-  
-  if (selected_answer === correct_answer && !alreadyCorrect) {
-    correct_answers_tec++;
-  }
-  let obj_user_choose = { question: question_display, selected: selected_answer, answer: correct_answer };
-  answerPlusQuestion_user_tec.push(obj_user_choose);
+    let alreadyCorrect = answerPlusQuestion_user_tec.some(obj => obj.question === question_display && obj.selected === correct_answer);
 
-  // console.log("the sorted question LS "+storedQuestion);
-  // console.log("the sorted option LS "+storedOptions);
+    if (selected_answer === correct_answer && !alreadyCorrect) {
+      correct_answers_tec++;
+    }
+    let obj_user_choose = { question: question_display, selected: selected_answer, answer: correct_answer };
+    answerPlusQuestion_user_tec.push(obj_user_choose);
+
+    // console.log("the sorted question LS "+storedQuestion);
+    // console.log("the sorted option LS "+storedOptions);
+  });
 });
-});
-console.log("count of the correct answer"+correct_answers_tec);
-console.log("array of selected answer"+answerPlusQuestion_user_tec);
-console.log("the index of question"+index);
+console.log("count of the correct answer" + correct_answers_tec);
+console.log("array of selected answer" + answerPlusQuestion_user_tec);
+console.log("the index of question" + index);
 
-console.log("the average of technical test"+ accuracyPercentage_tec);
+console.log("the average of technical test" + accuracyPercentage_tec);
 
 let questionRandom = 2;
-index++; 
+index++;
 
-button__submit_technical.addEventListener("click" ,()=>{
+button__submit_technical.addEventListener("click", () => {
 
-  tech_Q.innerHTML=`
+  tech_Q.innerHTML = `
   <div class="row row_hederquestion">
   <div class="col-11 d-flex justify-content-center align-items-center">
       <p class="h5 question_cont border-bottom ml-4" >Question ${questionRandom}/10</p>
@@ -424,7 +431,7 @@ button__submit_technical.addEventListener("click" ,()=>{
   <p class="h5 question_ d-flex justify-content-center align-items-center p-5  " >${tech_ten_Random[index].question}</p>
 </div>
   `;
-  tech_A.innerHTML=`
+  tech_A.innerHTML = `
   <div class="form-check mt-4 mb-2=1 form-check1 ">
   <input class="form-check-input input_check" type="radio" name="option-${index}" id="exampleRadios1" value="${tech_ten_Random[index].options[0]}"  >
   <label class="form-check-label" for="exampleRadios1">
@@ -450,30 +457,42 @@ button__submit_technical.addEventListener("click" ,()=>{
   </label>
 </div>
   `
-  const Radios=tech_A.querySelectorAll(`input[name="option-${index}"]`);
-  Radios.forEach(radio =>{
-   radio.addEventListener("click",()=>{
-    let question_display=  tech_ten_Random[index-1].question;
-     let correct_answer =tech_ten_Random[index-1].answer;
-     let Selected_answer =radio.value;
-     let alreadyCorrect = answerPlusQuestion_user_tec.some(obj => obj.question === question_display && obj.selected === correct_answer);
-     if (Selected_answer === correct_answer && !alreadyCorrect) {
-      correct_answers_tec++;
-     }
-     let obj_user_choose ={ question:question_display , selected: Selected_answer , answer: correct_answer};
-     answerPlusQuestion_user_tec.push(obj_user_choose);
-    
-   })
- });
- console.log(correct_answers_tec);
-    console.log(answerPlusQuestion_user_tec);
-    index++;
+  const Radios = tech_A.querySelectorAll(`input[name="option-${index}"]`);
+  Radios.forEach(radio => {
+    radio.addEventListener("click", () => {
+      let question_display = tech_ten_Random[index - 1].question;
+      let correct_answer = tech_ten_Random[index - 1].answer;
+      let Selected_answer = radio.value;
+      let alreadyCorrect = answerPlusQuestion_user_tec.some(obj => obj.question === question_display && obj.selected === correct_answer);
+      if (Selected_answer === correct_answer && !alreadyCorrect) {
+        correct_answers_tec++;
+      }
+      let obj_user_choose = { question: question_display, selected: Selected_answer, answer: correct_answer };
+      answerPlusQuestion_user_tec.push(obj_user_choose);
+
+    })
+  });
+  console.log(correct_answers_tec);
+  console.log(answerPlusQuestion_user_tec);
+  index++;
   questionRandom++;
 
-  const average_tec = correct_answers_tec /maxQuestions ;
+  const average_tec = correct_answers_tec / maxQuestions;
   const accuracyPercentage_tec = (average_tec * 100).toFixed(2);
-  localStorage.setItem(`average_tech`,accuracyPercentage_tec+"%");
 
-console.log("the average of technical"+ accuracyPercentage_tec);
-localStorage.setItem(`user_answer-tech${index-1}`, JSON.stringify(answerPlusQuestion_user_tec));
+  console.log("the average of technical" + accuracyPercentage_tec);
+  // localStorage.setItem(`user_answer-tech${index-1}`, JSON.stringify(answerPlusQuestion_user_tec));
+
+
+  if (questionRandom == 11) {
+    submit_btn.src = "../assets/ics/submit-success-check-mark-svgrepo-com.svg"
+    submit_btn.style.width = "71px"
+    localStorage.setItem(`score_tech`, accuracyPercentage_tec + "%");
+    submit_btn.addEventListener("click", () => {
+     
+      window.location.href = "../index.html"
+
+
+    })
+  }
 });
