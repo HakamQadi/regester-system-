@@ -23,7 +23,7 @@
     <!-- // -->
     <title>profile</title>
   </head>
-  <body>
+  <body id="personal_info">
     <section class="personal-section">
       <div class="container">
         <div class="card">
@@ -43,19 +43,19 @@
             <!-- <input type="image" src="../assets/img/add-img.png" alt="Submit" width="48" height="48"> -->
           </div>
           <div style="margin-top: 5rem" class="webflow-style-input">
-            <input class="" type="text" placeholder="First name" />
+            <input id="firstname_input" type="text" placeholder="First name" />
             <button id="icn-input" type="submit">
               <i class="icon ion-edit"></i>
             </button>
           </div>
           <div class="webflow-style-input">
-            <input class="" type="text" placeholder="Last name" />
+            <input id="lastname_input" type="text" placeholder="Last name" />
             <button id="icn-input" type="submit">
               <i class="icon ion-edit"></i>
             </button>
           </div>
           <div class="webflow-style-input">
-            <input class="" type="text" placeholder="Username" />
+            <input id="username_input" type="text" placeholder="Username" />
             <button id="icn-input" type="submit">
               <i class="icon ion-edit"></i>
             </button>
@@ -63,9 +63,10 @@
           <div style="appearance: none" class="webflow-style-input">
             <input placeholder="Select a date" class="date_input" type="date"/>
           </div>
-          <button style="margin-bottom: 7rem" id="submit_btn">Submit</button>
+          <button style="margin-bottom: 7rem" id="next_btn">Nexr</button>
         </div>
       </div>
     </section>
+    <script src="../js/preview.js"></script>
   </body>
 </html>

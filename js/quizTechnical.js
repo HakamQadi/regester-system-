@@ -335,8 +335,8 @@ const questionData = {
   question: tech_ten_Random[index].question,
   options: tech_ten_Random[index].options
 };
-localStorage.setItem('questionData', JSON.stringify(questionData));
-const storedQuestionData = JSON.parse(localStorage.getItem('questionData'));
+// localStorage.setItem('questionData', JSON.stringify(questionData));
+// const storedQuestionData = JSON.parse(localStorage.getItem('questionData'));
 const storedQuestion = storedQuestionData.question;
 const storedOptions = storedQuestionData.options;
 

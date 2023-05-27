@@ -139,7 +139,7 @@ input {
 
 /* button */
 
-#submit_btn {
+#finish_btn {
   font-family: inherit;
   font-size: inherit;
 
@@ -160,7 +160,7 @@ input {
   background-color: hsl(236, 32%, 26%);
 }
 
-#submit_btn::before {
+#finish_btn::before {
   position: absolute;
   z-index: -1;
   top: 50%;
@@ -178,13 +178,13 @@ input {
   background-color: #3cefff;
 }
 
-#submit_btn:hover {
+#finish_btn:hover {
   cursor: pointer;
 
   color: #161616;
 }
 
-#submit_btn:hover::before {
+#finish_btn:hover::before {
   transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
 }
 

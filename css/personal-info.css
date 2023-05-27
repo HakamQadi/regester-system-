@@ -170,7 +170,7 @@ input {
 
 /* button */
 
-#submit_btn {
+#next_btn {
   font-family: inherit;
   font-size: inherit;
 
@@ -191,7 +191,7 @@ input {
   background-color: hsl(236, 32%, 26%);
 }
 
-#submit_btn::before {
+#next_btn::before {
   position: absolute;
   z-index: -1;
   top: 50%;
@@ -209,13 +209,13 @@ input {
   background-color: #84a6d3;
 }
 
-#submit_btn:hover {
+#next_btn:hover {
   cursor: pointer;
 
   color: #161616;
 }
 
-#submit_btn:hover::before {
+#next_btn:hover::before {
   transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
 }
 

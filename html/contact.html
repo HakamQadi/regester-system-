@@ -21,33 +21,41 @@
     <!-- normlize -->
     <link rel="stylesheet" href="../css/normlize.css" />
     <!-- // -->
+
     <title>Document</title>
   </head>
-  <body>
-    <section class="contact_section">
+  <body id="contact">
+    <section class="edu_section">
       <div class="container">
         <div class="card">
           <div style="margin-top: 5rem" class="webflow-style-input">
-            <input class="" type="email" placeholder="Education level" />
+            <input id="phone" type="number" placeholder="Phone number" />
             <button id="icn-input" type="submit">
               <i class="icon ion-edit"></i>
             </button>
           </div>
           <div class="webflow-style-input">
-            <input class="" type="email" placeholder="Field Of study" />
+            <input id="country" type="text" placeholder="Country" />
             <button id="icn-input" type="submit">
               <i class="icon ion-edit"></i>
             </button>
           </div>
           <div class="webflow-style-input">
-            <input class="" type="email" placeholder="Education Status" />
+            <input id="city" type="text" placeholder="City" />
             <button id="icn-input" type="submit">
               <i class="icon ion-edit"></i>
             </button>
           </div>
-          <button style="margin-bottom: 7rem" id="submit_btn">Bubble</button>
+          <div class="webflow-style-input">
+            <input class="" type="number" placeholder="Zip code" />
+            <button id="icn-input" type="submit">
+              <i class="icon ion-edit"></i>
+            </button>
+          </div>
+          <button style="margin-bottom: 7rem" id="finish_btn">Finish</button>
         </div>
       </div>
     </section>
+    <script src="../js/preview.js"></script>
   </body>
 </html>
