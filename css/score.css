@@ -5,17 +5,17 @@ main {
     background-repeat: no-repeat;
     background-position: left bottom;
 }
-#score img {
+.score img {
   width: 25rem;
 }
 
-#score h1 {
+.score h1 {
   color: #fff;
   font-size: 2rem;
   font-family: ui-monospace;
 }
 
-#score span {
+.score span {
   color: rgb(132 166 211 / 91%);
   background-color: #fff;
   font-size: 3rem;
@@ -37,7 +37,7 @@ main {
   height: 850px;
 }
 
-#score {
+.score {
   text-align: center;
   width: 50%;
 }

@@ -315,7 +315,7 @@ let timeLeft = localStorage.getItem('timeLeft_tech') || (10 * 60);
 const countdown = setInterval(function () {
   if (timeLeft <= 0) {
     clearInterval(countdown);
-    window.location.href = 'score.html';
+    // window.location.href = 'score.html';
   } else {
     const minutes = Math.floor(timeLeft / 60);
     const seconds = timeLeft % 60;
@@ -479,11 +479,11 @@ button__submit_technical.addEventListener("click", () => {
 
   const average_tec = correct_answers_tec / maxQuestions;
   const accuracyPercentage_tec = (average_tec * 100).toFixed(2);
-
+  
   console.log("the average of technical" + accuracyPercentage_tec);
   // localStorage.setItem(`user_answer-tech${index-1}`, JSON.stringify(answerPlusQuestion_user_tec));
-
-
+  
+  
   if (questionRandom == 11) {
     submit_btn.src = "../assets/ics/submit-success-check-mark-svgrepo-com.svg"
     submit_btn.style.width = "71px"

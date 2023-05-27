@@ -197,6 +197,7 @@ const englishTest = [
 //random
 
 
+let submit_btn = document.getElementById("submit_icon");
 
   const english_ten_Random=[];
   const maxQuestions = 15; 
@@ -232,7 +233,7 @@ const countdown = setInterval(function() {
 if (timeLeft <= 0) {
   clearInterval(countdown);
 
-  window.location.href = '../index.html';
+  // window.location.href = '../index.html';
   
 } else {
   const minutes = Math.floor(timeLeft / 60);
@@ -386,12 +387,26 @@ index++;
 
     const average = correct_answers / totalQuestions;
     const accuracyPercentage = (average * 100).toFixed(2);
-    localStorage.setItem(`average${index-1}`,accuracyPercentage+"%");
+    // localStorage.setItem(`average${index-1}`,accuracyPercentage+"%");
 
   console.log("the average of "+ accuracyPercentage);
-  localStorage.setItem(`user_answer${index-1}`, JSON.stringify(answerPlusQuestion_user));
+  // console.log(questionRandom);
+  // localStorage.setItem(`user_answer${index-1}`, JSON.stringify(answerPlusQuestion_user));
+  if (questionRandom == 16) {
+    // console.log(questionRandom);
+    submit_btn.src = "../assets/ics/submit-success-check-mark-svgrepo-com.svg"
+    submit_btn.style.width = "71px"
+    localStorage.setItem(`score_english`, accuracyPercentage + "%");
+    submit_btn.addEventListener("click", () => {
+     
+      window.location.href = "../index.html"
+  
+  
+    })
+  }
+   
 });
- 
+
 function checkValue(v) {
 }
 
