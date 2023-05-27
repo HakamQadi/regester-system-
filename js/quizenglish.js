@@ -266,25 +266,25 @@ container_Q.innerHTML=`
   `;
 //(first answer)
 container_A.innerHTML=`
-<div class="form-check mt-4 mb-2 form-check1">
+<div class="form-check mt-4 mb-2 form-check1 check_english ">
                       <input class="form-check-input " type="radio"  name="option-${index}" id="exampleRadios1" value="${english_ten_Random[index].options[0]}" onclick="checkValue(value)">
                       <label class="form-check-label" for="exampleRadios1">
                        <span>A.</span>${english_ten_Random[index].options[0]}
                       </label>
                     </div>
-                    <div class="form-check mt-4 mb-1">
+                    <div class="form-check mt-4 mb-1 check_english">
                       <input class="form-check-input" type="radio" name="option-${index}" id="exampleRadios2" value="${english_ten_Random[index].options[1]}" onclick="checkValue(value)">
                       <label class="form-check-label" for="exampleRadios2">
                       <span>B.</span> ${english_ten_Random[index].options[1]}
                       </label>
                     </div>
-                    <div class="form-check mt-4 mb-1">
+                    <div class="form-check mt-4 mb-1 check_english">
                     <input class="form-check-input" type="radio" name="option-${index}" id="exampleRadios3" value="${english_ten_Random[index].options[2]}" onclick="checkValue(value)">
                     <label class="form-check-label" for="exampleRadios3">
                     <span>B.</span> ${english_ten_Random[index].options[2]}
                     </label>
                   </div>
-                    <div class="form-check mt-4 mb-1 form-check1 ">
+                    <div class="form-check mt-4 mb-1 form-check1 check_english">
                       <input class="form-check-input" type="radio"  name="option-${index}" id="exampleRadios4" value="${english_ten_Random[index].options[3]}" onclick="checkValue(value)" >
                       <label class="form-check-label" for="exampleRadios4">
                         <span>D.</span>  ${english_ten_Random[index].options[3]}
@@ -339,24 +339,24 @@ index++;
 </div>
     `;
   container_A.innerHTML=`
-  <div class="form-check mt-4 mb-2 form-check1">
+  <div class="form-check mt-4 mb-2 form-check1 check_english">
   <input class="form-check-input input_check answers" type="radio" name="option-${index}" id="exampleRadios1"  value="${english_ten_Random[index].options[0]}" onclick="checkValue(value)" >
   <label class="form-check-label " for="exampleRadios1">
    <span>A.</span>${english_ten_Random[index].options[0]}
   </label>
 </div>
-<div class="form-check mt-4 mb-1 ">
+<div class="form-check mt-4 mb-1 check_english">
   <input class="form-check-input answers" type="radio" name="option-${index}" id="exampleRadios2"  value="${english_ten_Random[index].options[1]}" onclick="checkValue(value)">
   <label class="form-check-label" for="exampleRadios2">
   <span>B.</span> ${english_ten_Random[index].options[1]}
   </label>
 </div>
-<div class="form-check mt-4 mb-1 ">
+<div class="form-check mt-4 mb-1 check_english">
   <input class="form-check-input answers" type="radio"  name="option-${index}" id="exampleRadios3"  value="${english_ten_Random[index].options[2]}" onclick="checkValue(value)">
   <label class="form-check-label" for="exampleRadios3">
    <span>C.</span> ${english_ten_Random[index].options[2]}
 </div>
-<div class="form-check mt-4 mb-1 form-check1 answers">
+<div class="form-check mt-4 mb-1 form-check1 answers check_english">
   <input class="form-check-input answers" type="radio"  name="option-${index}" id="exampleRadios4"  value="${english_ten_Random[index].options[3]}" onclick="checkValue(value)" >
   <label class="form-check-label" for="exampleRadios4">
     <span>D.</span>  ${english_ten_Random[index].options[3]}

@@ -145,3 +145,7 @@ input[type="radio"]:checked {
     font-weight: bolder;
     font-size: 0.9rem;
 }
+.check_english input[type="radio"]:checked {
+    border-color: var(--col-question-bg_color_light2);
+    background-color: var(--col-question-bg_color_light2);
+}
