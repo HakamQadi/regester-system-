@@ -308,9 +308,7 @@ console.log(tech_ten_Random);
   const countdown = setInterval(function() {
     if (timeLeft <= 0) {
       clearInterval(countdown);
-   
       window.location.href = 'score.html';
-      
     } else {
       const minutes = Math.floor(timeLeft / 60);
       const seconds = timeLeft % 60;
@@ -322,7 +320,18 @@ console.log(tech_ten_Random);
       timeLeft--;
     }
   }, 1000);
+
   let index=0;
+// localStorage.setItem('timeLeft_tech', timeLeft);
+
+const questionData = {
+  question: tech_ten_Random[index].question,
+  options: tech_ten_Random[index].options
+};
+localStorage.setItem('questionData', JSON.stringify(questionData));
+const storedQuestionData = JSON.parse(localStorage.getItem('questionData'));
+const storedQuestion = storedQuestionData.question;
+const storedOptions = storedQuestionData.options;
 
   tech_Q.innerHTML=`
   <div class="row row_hederquestion">
@@ -337,7 +346,7 @@ console.log(tech_ten_Random);
   <img src="../assets/img/photo.svg" alt="" class="image_question">
 </div>
 <div class="row mt-1">
-  <p class="h5 question_ d-flex justify-content-center align-items-center p-5 " >${tech_ten_Random[index].question}</p>
+  <p class="h5 question_ d-flex justify-content-center align-items-center p-5 " >${storedQuestion}</p>
 </div>
   `;
   tech_A.innerHTML=`
@@ -367,19 +376,25 @@ console.log(tech_ten_Random);
     </div>
 
   `;
+ 
   const Radios = tech_A.querySelectorAll(`input[name="option-${index}"]`);
 Radios.forEach(radio => {
 radio.addEventListener("click", () => {
+
   let question_display = tech_ten_Random[index-1].question;
   let correct_answer = tech_ten_Random[index-1].answer;
   let selected_answer = radio.value;
+
   let alreadyCorrect = answerPlusQuestion_user_tec.some(obj => obj.question === question_display && obj.selected === correct_answer);
-  // Check if the selected answer matches the correct answer
+  
   if (selected_answer === correct_answer && !alreadyCorrect) {
     correct_answers_tec++;
   }
   let obj_user_choose = { question: question_display, selected: selected_answer, answer: correct_answer };
   answerPlusQuestion_user_tec.push(obj_user_choose);
+
+  // console.log("the sorted question LS "+storedQuestion);
+  // console.log("the sorted option LS "+storedOptions);
 });
 });
 console.log("count of the correct answer"+correct_answers_tec);
@@ -457,7 +472,7 @@ button__submit_technical.addEventListener("click" ,()=>{
 
   const average_tec = correct_answers_tec /maxQuestions ;
   const accuracyPercentage_tec = (average_tec * 100).toFixed(2);
-  localStorage.setItem(`average_tech${index-1}`,accuracyPercentage_tec+"%");
+  localStorage.setItem(`average_tech`,accuracyPercentage_tec+"%");
 
 console.log("the average of technical"+ accuracyPercentage_tec);
 localStorage.setItem(`user_answer-tech${index-1}`, JSON.stringify(answerPlusQuestion_user_tec));
