@@ -337,7 +337,7 @@ console.log(tech_ten_Random);
   <img src="../assets/img/photo.svg" alt="" class="image_question">
 </div>
 <div class="row mt-1">
-  <p class="h5 question_ d-flex justify-content-center align-items-center pt-3 " >${tech_ten_Random[index].question}</p>
+  <p class="h5 question_ d-flex justify-content-center align-items-center p-5 " >${tech_ten_Random[index].question}</p>
 </div>
   `;
   tech_A.innerHTML=`
@@ -406,7 +406,7 @@ button__submit_technical.addEventListener("click" ,()=>{
   <img src="../assets/img/photo.svg" alt="" class="image_question">
 </div>
 <div class="row mt-1">
-  <p class="h5 question_ d-flex justify-content-center align-items-center pt-3 " >${tech_ten_Random[index].question}</p>
+  <p class="h5 question_ d-flex justify-content-center align-items-center p-5  " >${tech_ten_Random[index].question}</p>
 </div>
   `;
   tech_A.innerHTML=`

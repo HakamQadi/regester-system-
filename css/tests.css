@@ -8,7 +8,7 @@
     
 
     /* english test style*/
-    --col-question-bg_color_light2:#DEC3E6;
+    --col-question-bg_color_light2:#2e8c80;
     --col-answer-bg_color_light2:#FFFFFF;
     --main2-bg-color-light2:#F7F8F9;
 
@@ -136,6 +136,12 @@ input[type="radio"]:checked {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-  
     color: var(--col-question-bg_color_light2);
+}
+.profilePicture__username img{
+    width: 4%;
+}
+.user_name{
+    font-weight: bolder;
+    font-size: 0.9rem;
 }

@@ -25,6 +25,10 @@
 .dark-mode .txt_color {
   color: var(--navBar_container_txt_color_dark);
 }
+.user__name{
+  color: #dbe5f2;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 /* dark-light mode */
 
@@ -74,3 +78,4 @@
 
   cursor: pointer;
 }
+
