@@ -28,8 +28,12 @@ body {
 }
 
 .style input {
-  width: 250px;
   box-shadow: 4px 4px 9px #888888;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .SignUp-btn {
@@ -81,10 +85,11 @@ margin-left: 5%;
   }
   .style form p {
     font-size: 0.5rem;
-    margin-left: 1.6rem;
+    margin-left: 5px;
   }
   form {
     width: 10rem;
+    margin-top: 11px;
   }
 
   span a {
@@ -99,11 +104,15 @@ margin-left: 5%;
     margin-left: 2rem;
   }
   .style .box {
-    margin-left: 72px;
-    height: 300px;
+    margin-left: 63px;
+    height: 387px;
     padding: 7px;
-    width: 179px;}
+    width: 195px;
+  }
   .style{
     background-image: none;
+    height: 16rem;
+    padding-bottom: 25rem;
+    margin-right: 44%;
   }
 }

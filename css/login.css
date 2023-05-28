@@ -18,6 +18,10 @@ body {
    margin-right: 2%;
 }
 
+#forget_password{
+  margin-left: 51%;
+}
+
 .style .box {
   background: rgb(150, 179, 217);
   display: grid;
@@ -29,7 +33,6 @@ body {
   margin-top: 2%;
 }
 .style input {
-  width: 250px;
   box-shadow: 4px 4px 9px #888888;
 }
 
@@ -63,34 +66,41 @@ a {
   padding-top: 8%;
 margin-left: 5%;
 }
+
+.password_container{
+  margin-bottom: 3rem;
+}
 /*----------------media query--------------*/
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 320px) {
   .style input {
-    width: 108px;
-    margin-left: 1.7rem;
+    padding: 7%;
     font-size: 0.1rem;
+    width: 73%;
+    height: 33px;
+    margin-left: 23px;
   }
   .style input::placeholder {
-    font-size: 0.1rem;
+    font-size: 0.6rem;
   }
-  .login-btn {
+
+  .SignUp-btn {
     width: 108px;
     margin-left: 1.7rem;
-    font-size: 0.1rem;
+    font-size: 0.6rem;
     padding: 0;
     height: 20px;
   }
   .style form p {
-    font-size: 0.1rem;
-    margin-left: 2rem;
+    font-size: 12px;
   }
   form {
     width: 10rem;
+    margin-top: 11px;
   }
 
   span a {
-    font-size: 0.1rem;
+    font-size: 0.5rem;
   }
   .style h1 {
     margin: 10px auto 6px auto;
@@ -101,11 +111,30 @@ margin-left: 5%;
     margin-left: 2rem;
   }
   .style .box {
-    margin-left: 72px;
-    height: 240px;
+    margin-left: 63px;
+    height: 387px;
     padding: 7px;
-    width: 179px;}
+    width: 195px;
+  }
   .style{
     background-image: none;
+    height: 16rem;
+    padding-bottom: 25rem;
+    margin-right: 44%;
+  }
+  .login-btn{
+    width: 73%;
+    height: 33px;
+    margin-left: 23px;
+  }
+  #forget_password{
+    margin-left: 38%;
+  }
+  .password_container{
+    margin-bottom: 2rem;
+  }
+  footer{
+    margin-top: 2rem;
+
   }
 }
