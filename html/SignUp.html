@@ -28,8 +28,8 @@
   <body id="signup_page">
     <!---- header ---->
 
-    <header class="p-3 mb-3 border-bottom navbar_container">
-      <div class="d-flex flex-wrap align-items-center justify-content-between">
+    <header class="p-3 border-bottom navbar_container">
+      <div style="margin: 0 64.4px ;" class="d-flex flex-wrap align-items-center justify-content-between">
         <div class="d-flex flex-wrap gap-3">
           <a href="../index.html">
             <img
@@ -40,59 +40,31 @@
           </a>
         </div>
         <div class="d-flex flex-wrap gap-3 align-items-center">
-          <div class="dropdown text-end">
+          <p id="user__name">Nadeen</p>
+          <div class="dropdown text-end ">
             <a
               href="#"
               class="d-block link-dark text-decoration-none dropdown-toggle txt_color"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
+            
               <img
-                src="https://github.com/mdo.png"
+                src="../assets/img/avatar.jpg"
                 alt="mdo"
                 width="32"
                 height="32"
                 class="rounded-circle"
               />
             </a>
+           
             <ul class="dropdown-menu text-small">
-              <li><a class="dropdown-item" href="#">New project...</a></li>
-              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item" href="../index.html">Home</a></li>
+              <!-- <li><a class="dropdown-item" href="#">Settings</a></li> -->
               <li><a class="dropdown-item" href="#">Profile</a></li>
               <li><hr class="dropdown-divider" /></li>
               <li><a class="dropdown-item" href="#">Sign out</a></li>
             </ul>
-          </div>
-          <div
-            style="margin-right: 1.5rem"
-            class="switch-background off-shadow"
-          >
-            <div class="innerSwitch">
-              <svg
-                width="285"
-                height="150"
-                viewBox="0 0 208 31"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="face"
-              >
-                <path
-                  class="mouth"
-                  d="M77 60H130V73.5C130 88.1355 118.136 100 103.5 100C88.8645 100 77 88.1355 77 73.5V60Z"
-                  fill="#E76060"
-                />
-                <path
-                  class="eye eye-left"
-                  d="M60 30C60 46.5685 46.5685 60 30 60C13.4315 60 0 46.5685 0 30C0 13.4315 13.4315 0 30 0C46.5685 0 60 13.4315 60 30Z"
-                  fill="#474747"
-                />
-                <path
-                  class="eye eye-right"
-                  d="M208 31C208 47.5685 194.569 61 178 61C161.431 61 148 47.5685 148 31C148 14.4315 161.431 1 178 1C194.569 1 208 14.4315 208 31Z"
-                  fill="#474747"
-                />
-              </svg>
-            </div>
           </div>
         </div>
       </div>
