@@ -1,4 +1,9 @@
-let page = document.body.id
+let page_home = document.body.id
+
+let usernameNav = document.getElementById("user__name")
+let name = sessionStorage.getItem("username")
+
+usernameNav.innerHTML = `<p>${name}</p>`;
 
 
 // set data to local strage
@@ -28,7 +33,7 @@ function getData() {
 
 
 
-if (page == "signup_page") {
+if (page_home == "signup_page") {
     let username = document.getElementById("username")
     let email = document.getElementById("email")
     let password = document.getElementById("password")
@@ -113,7 +118,7 @@ if (page == "signup_page") {
 
 
 }
-else if (page == "login_page") {
+else if (page_home == "login_page") {
     let username = document.getElementById("username")
     let password = document.getElementById("password")
     let form_login = document.getElementById("form_login")
@@ -144,6 +149,7 @@ else if (page == "login_page") {
             for (let i = 0; i < get_data.length; i++) {
                 if (get_data[i].username == username.value && get_data[i].pass == password.value) {
                     console.log("موجود")
+                    sessionStorage.setItem("username",get_data[i].username)
 
                     // sessionStorage.setItem("user_firstName", get_data[i].firstName)
                     // sessionStorage.setItem("user_lastName", get_data[i].lastName)
