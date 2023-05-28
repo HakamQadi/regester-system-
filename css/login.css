@@ -75,7 +75,7 @@ margin-left: 5%;
 @media screen and (max-width: 600px) {
   .style input {
     padding: 7%;
-    font-size: 0.1rem;
+    font-size: 10px;
     width: 73%;
     height: 33px;
     margin-left: 23px;
@@ -107,7 +107,7 @@ margin-left: 5%;
     font-size: 1.5rem;
   }
   .style small {
-    font-size: 0.1rem;
+    font-size: 10px;
     margin-left: 2rem;
   }
   .style .box {

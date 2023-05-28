@@ -70,7 +70,7 @@ margin-left: 5%;
     width: 108px;
     padding: 7%;
     margin-left: 1.7rem;
-    font-size: 0.1rem;
+    font-size: 10px;
   }
   .style input::placeholder {
     font-size: 0.6rem;
