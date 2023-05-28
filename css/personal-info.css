@@ -8,6 +8,10 @@ body {
   background-color: var(--container_bg_color_light);
 }
 
+header{
+  background: rgb(255, 255, 255);
+}
+
 .personal-section {
   display: flex;
   flex-direction: column;
@@ -44,6 +48,8 @@ body {
 .card {
   background-color: var(--card_bg_color_light);
   background-image: url("../assets/img/edu-bottom.png");
+  margin-top: 75px;
+  margin-bottom: 75px;
 
   /* background-size: ; */
 

@@ -4,15 +4,23 @@
   --card_bg_color_light: #524a65;
 }
 
+body{
+  background-color: var(--container_bg_color_light);
+}
+
+header{
+  background: rgb(255, 255, 255);
+}
 .edu_section {
   width: 100%;
   height: 41rem;
 
-  background-color: var(--container_bg_color_light);
+  
 }
 .card {
   background-color: var(--card_bg_color_light);
   background-image: url("../assets/img/edu-bottom.png");
+  margin-top: 100px;
 
   /* background-size: ; */
 
