@@ -490,7 +490,8 @@ button__submit_technical.addEventListener("click", () => {
     localStorage.setItem(`score_tech`, accuracyPercentage_tec + "%");
     submit_btn.addEventListener("click", () => {
      
-      window.location.href = "../index.html"
+      // window.location.href = "../index.html"
+      window.close()
 
 
     })

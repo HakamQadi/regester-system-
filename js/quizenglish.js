@@ -400,7 +400,8 @@ index++;
     localStorage.setItem(`score_english`, accuracyPercentage + "%");
     submit_btn.addEventListener("click", () => {
      
-      window.location.href = "../index.html"
+      // window.location.href = "../index.html"
+      window.close()
   
   
     })
