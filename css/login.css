@@ -72,7 +72,7 @@ margin-left: 5%;
 }
 /*----------------media query--------------*/
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .style input {
     padding: 7%;
     font-size: 0.1rem;
