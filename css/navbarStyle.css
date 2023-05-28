@@ -78,4 +78,12 @@
 
   cursor: pointer;
 }
+.edit_margin{
+  margin: 0 64.4px
+}
 
+@media (max-width:450px) {
+  .edit_margin {
+    margin: 0 0 !important;
+  }
+}
