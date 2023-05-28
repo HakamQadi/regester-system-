@@ -222,6 +222,7 @@ let timer_english=document.getElementById("timer_english_exam");
 // 
 let question_display;
 let correct_answer ;
+
 let Selected_answer;
 // let random_Question=english_ten_Random[index];
 const average = correct_answers / totalQuestions;
