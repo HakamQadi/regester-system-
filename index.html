@@ -37,10 +37,7 @@
 
   <body>
     <header class="p-3 border-bottom navbar_container">
-      <div 
-        
-        class="d-flex flex-wrap align-items-center justify-content-between edit_margin"
-      >
+      <div style="margin: 0 64.4px ;" class="d-flex flex-wrap align-items-center justify-content-between">
         <div class="d-flex flex-wrap gap-3">
           <a href="../index.html">
             <img
@@ -51,16 +48,15 @@
           </a>
         </div>
         <div class="d-flex flex-wrap gap-3 align-items-center">
-          <div id="user__name">
-            <!-- <p>Nadeen</p> -->
-          </div>
-          <div class="dropdown text-end">
+          <p id="user__name">Nadeen</p>
+          <div class="dropdown text-end ">
             <a
               href="#"
               class="d-block link-dark text-decoration-none dropdown-toggle txt_color"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
+            
               <img
                 src="../assets/img/avatar.jpg"
                 alt="mdo"
@@ -69,15 +65,15 @@
                 class="rounded-circle"
               />
             </a>
-
+           
             <ul class="dropdown-menu text-small">
               <li><a class="dropdown-item" href="../index.html">Home</a></li>
+              <!-- <li><a class="dropdown-item" href="#">Settings</a></li> -->
               <li><a class="dropdown-item" href="#">Profile</a></li>
               <li><hr class="dropdown-divider" /></li>
               <li><a class="dropdown-item" href="#">Sign out</a></li>
             </ul>
           </div>
-          
         </div>
       </div>
     </header>
@@ -94,7 +90,6 @@
       </div>
     </section>
     <main class="px-0 ">
-      
       <section class="medail__main">
         <div class="container__progress blur__bg">
           <div class="steps">
@@ -106,10 +101,10 @@
               <span class="indicator"></span>
             </div>
           </div>
-          <div class="buttons">
-            <!-- <button id="prev" disabled>Prev</button> -->
+          <!-- <div class="buttons">
+            <button id="prev" disabled>Prev</button>
             <button id="next">Start</button>
-          </div>
+          </div> -->
         </div>
       </section>
       <section class="medail__main__quiz">
@@ -121,22 +116,22 @@
             </h1>
 
             <div class="Quiz__btn__container">
-              <button class="group__a" disabled id="next1" onclick="location.href= 'html/personal-info.html'">
+              <button class="group__a" onclick="location.href= 'html/personal-info.html'">
                 <img src="assets/ics/information-svgrepo-com.svg" alt="" />
                 Information
               </button>
-              <button class="group__b" id="next2" onclick="location.href= 'html/Testenglish.html'">
+              <button class="group__b" onclick="location.href= 'html/Testenglish.html'">
                 <img
                   src="assets/ics/english-svgrepo-com (1).svg"
                   alt=""
                 />
                English Quiz
               </button>
-              <button class="group__a" disabled id="next3" onclick="location.href= 'html/Testtechnical.html'">
+              <button class="group__a"  onclick="location.href= 'html/Testtechnical.html'">
                 <img src="assets/ics/code-1-svgrepo-com.svg" alt="" />
                 Code Quiz
               </button>
-              <button class="group__b" id="next4" onclick="location.href= 'html/score.html'">
+              <button class="group__b"  onclick="location.href= 'html/score.html'">
                 <img src="assets/ics/submit-success-check-mark-svgrepo-com.svg" alt="" /> Submit
               </button>
             </div>
@@ -201,6 +196,5 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-    <script src="js/main.js"></script>
   </body>
 </html>

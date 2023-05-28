@@ -22,7 +22,6 @@ footer {
 @media (max-width: 600px) {
   footer div p a {
     font-size: 0.8rem;
-    /* font-weight: 100; */
   }
   .contacts {
     margin: 0 20px;

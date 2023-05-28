@@ -201,12 +201,12 @@ main {
   -o-border-radius: 10px;
 }
 
-.group__a:disabled,
+/* .group__a:disabled,
 .group__a[disabled]{
   border: 5px solid #999999;
   background-color: #cccccc;
   color: #666666;
-}
+} */
 
 
 .group__a:hover {
