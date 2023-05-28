@@ -64,7 +64,8 @@ if (page=="contact") {
         // console.log("object");
         localStorage.setItem("address",country.value +","+city.value)
         localStorage.setItem("phone",phone.value)
-        window.location.href="../index.html"
+        // window.location.href="../index.html"
+        window.close()
 
     })
 
