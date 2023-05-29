@@ -14,6 +14,9 @@
 
     /* dark */
 }
+body{
+    font-family: "Jost", sans-serif;
+}
 .test-header_tech{
     color: white;
     font-size: 1.5rem;
