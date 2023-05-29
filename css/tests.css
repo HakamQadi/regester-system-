@@ -56,7 +56,7 @@
 
 main{
     background-color: var(--main-bg-color-light);
-    /* height: 90vh; */
+    height: 100vh;
 }
 main2{
     background-color: var(--main2-bg-color-light2);
