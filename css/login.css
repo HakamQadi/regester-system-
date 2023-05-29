@@ -18,11 +18,6 @@ body {
    padding-bottom: 30rem;
    margin-right: 2%;
 }
-
-#forget_password{
-  margin-left: 51%;
-}
-
 .style .box {
   background: rgb(150, 179, 217);
   display: grid;
