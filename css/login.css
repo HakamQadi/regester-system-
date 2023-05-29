@@ -5,6 +5,7 @@
 
 body {
   background-color: var(--body-color);
+  font-family: "Jost", sans-serif;
 }
 
 .style {

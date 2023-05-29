@@ -1,81 +1,100 @@
+body {
+  font-family: "Jost", sans-serif;
+}
+
 main {
   background-color: rgb(54, 35, 96);
   background-image: url("../assets/img/scorebg.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
   background-size: 14%;
-    background-repeat: no-repeat;
-    background-position: left bottom;
 }
+
 .score img {
   width: 25rem;
 }
 
 .score h1 {
-  color: #fff;
   font-size: 2rem;
-  font-family: ui-monospace;
+
+  color: #fff;
 }
 
 .score span {
-  color: rgb(132 166 211 / 91%);
-  background-color: #fff;
   font-size: 3rem;
-  border-radius: 50%;
+
   display: inline-block;
+
   padding: 1.5%;
+
   text-align: center;
-  font-family: ui-monospace;
+
+  color: rgb(132 166 211 / 91%);
+  border-radius: 50%;
+  background-color: #fff;
 }
 
 #questions {
-  color: #fff;
   font-size: 30px;
+
+  color: #fff;
 }
 
 #container-score {
+  height: 850px;
+
   background-repeat: no-repeat;
   background-position: left bottom;
-  height: 850px;
 }
 
 .score {
-  text-align: center;
   width: 50%;
+
+  text-align: center;
 }
 
 .score-text {
-  color: white;
   font-size: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  margin-left: 13%;
-  margin-top: 6%;
-  font-family: ui-monospace;
   font-style: inherit;
-}
-.heder_submited{
-    border: #fff 1px solid;
-    padding: 2%;
-    border-radius:10px  ;
-    -webkit-border-radius:10px  ;
-    -moz-border-radius:10px  ;
-    -ms-border-radius:10px  ;
-    -o-border-radius:10px  ;
-    margin-bottom: 3%;
-    color: #fff;
 
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+
+  margin-top: 6%;
+  margin-left: 13%;
+
+  color: white;
 }
-@media screen and (max-width: 320px) {
-  #score h1{
+
+.heder_submited {
+  margin-bottom: 3%;
+  padding: 2%;
+
+  color: #fff;
+  border: #fff 1px solid;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+@media screen and(max-width: 320px) {
+  #score h1 {
     font-size: 15px;
   }
-  .score-text{
+
+  .score-text {
     font-size: 15px;
   }
-  h2{
+
+  h2 {
     font-size: 15px;
   }
-  #container-score{
+
+  #container-score {
     height: 29rem;
   }
 }
